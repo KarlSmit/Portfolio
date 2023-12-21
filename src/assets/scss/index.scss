@@ -353,7 +353,7 @@ hr {
 }
 
 .avatar {
-  background-image: url('https://cvmaker-storage.s3.eu-west-3.amazonaws.com/img/avatar/1f3640c23d0ea7a323031f8b900c5f767fe2c9eb.jpg');
+  background-image: url('/src/assets/images/Profielfoto\ 2.jpeg');
   background-repeat: no-repeat;
   position: relative;
   z-index: 99;
@@ -480,8 +480,7 @@ hr {
   padding: 0;
   top: 2px;
 }
-
-/* 
+ 
 .skills__item {
   display: inline-block;
   height: 9px;
@@ -494,7 +493,7 @@ hr {
 
 .skills__item.active {
   opacity: 1;
-} */
+}
 
 body .skills__list .skills__item {
   display: inline-block;
