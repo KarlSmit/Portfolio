@@ -8,7 +8,7 @@ function App() {
       <div className="sidebar--shadow-overlay"></div>
       <aside className="sidebar">
         <div className="avatar__bg">
-          {/* <h1>Karl Smit</h1> */}
+          <h1>Karl Smit</h1>
         </div>
         <div className="avatar"></div>
         {/* Persoongegevens */}
@@ -167,11 +167,19 @@ function App() {
         </div>
         {/* Intresses */}
         <div className="sidebar--data">
-          <h2 className="sidebar--title">Interesses</h2>
+          <h2 className="sidebar--title">Interesses / Hobby&#39;s</h2>
           <ul className="sidebar--list">
             <li className="sidebar--item sidebar--item-text sidebar--item-interest">
               <i className="sidebar--icon-square"></i>
               Sporten (Tennissen, Golfen en Paddelen)
+            </li>
+            <li className="sidebar--item sidebar--item-text sidebar--item-interest">
+              <i className="sidebar--icon-square"></i>
+              Koken
+            </li>
+            <li className="sidebar--item sidebar--item-text sidebar--item-interest">
+              <i className="sidebar--icon-square"></i>
+              Puzzels (Sudoku, Legpuzzel, 3D breinbreker, Puzzelbox)
             </li>
           </ul>
         </div>
@@ -180,7 +188,7 @@ function App() {
           <h2 className="sidebar--title">Talen</h2>
           <ul className="sidebar--list">
             <li className="sidebar--item">
-              <span className="sidebar--label">Nederlands</span>
+              <span className="sidebar--label">Nederlands (C2)</span>
               <span className="sidebar--item-align-right">
                 <ul className="skills__list">
                   <li className="skills__item active"></li>
@@ -280,7 +288,7 @@ function App() {
           <ol className="section--list skills">
             <li className="section--item skills">
               <div className="skills--label">
-                <h3>Microsoft Office</h3>
+                <h3>Agile / Scrum</h3>
               </div>
               <div className="skills--stars">
                 <ul className="skills__list">
@@ -294,16 +302,99 @@ function App() {
             </li>
             <li className="section--item skills">
               <div className="skills--label">
-                <h3>Coderen</h3>
-                <h3>(Python, JavaScript, Typescript, HTML, CSS)</h3>
+                <h3>Javascript & Typescript</h3>
               </div>
               <div className="skills--stars">
                 <ul className="skills__list">
                   <li className="skills__item active"></li>
                   <li className="skills__item active"></li>
                   <li className="skills__item active"></li>
-                  <li className="skills__item "></li>
-                  <li className="skills__item "></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>HTML & CSS / SCSS</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>Python</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>PHP</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>React/Angular</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>UI/UX Design</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>Microsoft Office</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item"></li>
                 </ul>
               </div>
             </li>
@@ -338,56 +429,89 @@ function App() {
             <h2>Stages</h2>
           </div>
           <ol className="section--list">
-                      <li className="section--item">
-            <div className="section--heading-group">
-              <div className="section--date">
-                feb 2023 - jun 2023
+            <li className="section--item">
+              <div className="section--heading-group">
+                <div className="section--date">feb 2023 - jun 2023</div>
+                <div className="section--heading">
+                  <h3>Software Engineer</h3>
+                </div>
+                <div className="section--sub-heading">
+                  Happy Horizon / Material District
+                </div>
               </div>
-              <div className="section--heading">
-                <h3>Software Engineer</h3>
+              <div className="section--content">
+                <p>
+                  Bij Material District werkte ik als front-end developer onder
+                  begeleiding van mijn collega&#39;s bij het softwarebedrijf
+                  Happy Horizon. In deze comakership droeg ik bij aan het
+                  project SampleStore, een platform vergelijkbaar met bol.com,
+                  waar architecten de klanten zijn en materiaalleveranciers de
+                  leveranciers zijn. Het doel was om de website internationaal
+                  te lanceren. Ik heb gewerkt aan een nieuwe interactie
+                  styleguide en deze vervolgens gekoppeld aan het
+                  SampleStore-project.
+                </p>
               </div>
-              <div className="section--sub-heading">
-                Happy Horizon / Material District                                  
-              </div>
-            </div>
-            <div className="section--content">
-              <p>Voor het 2e semester van mijn schooljaar 2022/2023 mocht ik weer stage lopen als software engineer. Hiervoor ben ik als Front-end Developer aan de slag gegaan bij Material District in naarden onder begeleiding van mijn collega&#39s bij het software bedrijf Happy Horizon.</p>
-            </div>
-          </li>
+            </li>
 
-          <li className="section--item">
-            <div className="section--heading-group">
-              <div className="section--date">
-                feb 2022 - jun 2022
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <li className="section--item mt-3">
+              <div className="section--heading-group">
+                <div className="section--date">feb 2022 - jun 2022</div>
+                <div className="section--heading">
+                  <h3>Software Engineer</h3>
+                </div>
+                <div className="section--sub-heading">DoItBig, Utrecht</div>
               </div>
-              <div className="section--heading">
-                <h3>Software Engineer</h3>
+              <div className="section--content">
+                <p>
+                  Bij dit bedrijf heb ik met twee medestudenten een Comakership
+                  doorlopen. We behandelden alle aspecten van een project,
+                  Analyse, Adviseren, Ontwerpen, Realiseren en Management &
+                  Control. Ons project betrof de ontwikkeling van Foodeli, een
+                  platform vergelijkbaar met Thuisbezorgd. Als team werkten we
+                  samen met onze internationale collega&#39;s aan alle delen van
+                  de applicatie, van inloggen tot het plaatsen van bestellingen
+                  en het personaliseren van accounts.
+                </p>
               </div>
-              <div className="section--sub-heading">
-                DoItBig, Utrecht                                    
+            </li>
+
+            <li className="section--item mt-3">
+              <div className="section--heading-group">
+                <div className="section--date">2017 - 2019</div>
+                <div className="section--heading">
+                  <h3>Assistent uitvoerder & Werkvoorbereider</h3>
+                </div>
+                <div className="section--sub-heading">VIOS, Koopmans & BAM</div>
               </div>
-            </div>
-            <div className="section--content">
-              <p>Bij dit bedrijf heb ik met twee andere mede studenten onze Comakership gelopen. Dit houd in dat we alle aspecten van een project hebben uitgevoerd om een vraagstuk te realiseren.</p>
-            </div>
-          </li>
-          
-          <li className="section--item">
-            <div className="section--heading-group">
-              <div className="section--date">
-                2017 - 2019
+              <div className="section--content">
+                <p>
+                  Tijdens mijn vierjarige MBO-opleiding Bouwkunde, Design &
+                  Architectuur heb ik drie stages doorlopen, waarin ik
+                  waardevolle ervaring heb opgedaan als bouwkundige en
+                  binnenhuisarchitect. In alle drie de stages heb ik
+                  daadwerkelijk op het bouwterrein gestaan, eerst als uitvoerder
+                  en de laatste twee als Werkvoorbereider. Hierbij heb ik
+                  voornamelijk gewerkt aan de technische tekeningen voor de
+                  bouw.
+                </p>
               </div>
-              <div className="section--heading">
-                <h3>Assistent uitvoerder & Werkvoorbereider</h3>
-              </div>
-              <div className="section--sub-heading">
-                VIOS, Koopmans & BAM                                    
-              </div>
-            </div>
-            <div className="section--content">
-              {/* <p>Dit was me eindstage van de Bouwkunde opleiding, die plaats vond in het eerste half jaar van me vierde jaar.</p> */}
-            </div>
-          </li>
+            </li>
           </ol>
         </div>
       </section>
