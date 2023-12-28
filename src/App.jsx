@@ -271,7 +271,7 @@ function App() {
               <div className="section--heading-group">
                 <div className="section--date">2015 - 2023</div>
                 <div className="section--heading">
-                  <h3>Horica- & Magazijnmedewerker</h3>
+                  <h3>Horeca- & Magazijnmedewerker</h3>
                 </div>
                 <div className="section--sub-heading">
                   Nelis Ijsalon, Dami Living & SolarClarity
@@ -416,8 +416,8 @@ function App() {
               </div>
               <div className="section--content">
                 <p>
-                  Basisveiligheid VCA is van belang om op een bouwterrein te
-                  mogen lopen.
+                  Basisveiligheid VCA is van belang om op een bouwterrein
+                  aanwezig te mogen zijn.
                 </p>
               </div>
             </li>
@@ -446,10 +446,10 @@ function App() {
                   Happy Horizon. In deze comakership droeg ik bij aan het
                   project SampleStore, een platform vergelijkbaar met bol.com,
                   waar architecten de klanten zijn en materiaalleveranciers de
-                  leveranciers zijn. Het doel was om de website internationaal
-                  te lanceren. Ik heb gewerkt aan een nieuwe interactie
+                  verkopers zijn. Het doel is om de website internationaal
+                  te lanceren, ik heb gewerkt aan een nieuwe interactieve
                   styleguide en deze vervolgens gekoppeld aan het
-                  SampleStore-project.
+                  SampleStore project.
                 </p>
               </div>
             </li>
@@ -486,7 +486,7 @@ function App() {
                   platform vergelijkbaar met Thuisbezorgd. Als team werkten we
                   samen met onze internationale collega&#39;s aan alle delen van
                   de applicatie, van inloggen tot het plaatsen van bestellingen
-                  en het personaliseren van accounts.
+                  en het kunnen personaliseren je account.
                 </p>
               </div>
             </li>
@@ -505,7 +505,7 @@ function App() {
                   Architectuur heb ik drie stages doorlopen, waarin ik
                   waardevolle ervaring heb opgedaan als bouwkundige en
                   binnenhuisarchitect. In alle drie de stages heb ik
-                  daadwerkelijk op het bouwterrein gestaan, eerst als uitvoerder
+                  daadwerkelijk op de bouwplaats gestaan, eerst als uitvoerder
                   en de laatste twee als Werkvoorbereider. Hierbij heb ik
                   voornamelijk gewerkt aan de technische tekeningen voor de
                   bouw.
