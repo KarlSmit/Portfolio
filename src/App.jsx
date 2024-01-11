@@ -350,7 +350,21 @@ function App() {
                 <ul className="skills__list">
                   <li className="skills__item active"></li>
                   <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
                   <li className="skills__item"></li>
+                  <li className="skills__item"></li>
+                </ul>
+              </div>
+            </li>
+            <li className="section--item skills">
+              <div className="skills--label">
+                <h3>C#</h3>
+              </div>
+              <div className="skills--stars">
+                <ul className="skills__list">
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
+                  <li className="skills__item active"></li>
                   <li className="skills__item"></li>
                   <li className="skills__item"></li>
                 </ul>
@@ -446,10 +460,10 @@ function App() {
                   Happy Horizon. In deze comakership droeg ik bij aan het
                   project SampleStore, een platform vergelijkbaar met bol.com,
                   waar architecten de klanten zijn en materiaalleveranciers de
-                  verkopers zijn. Het doel is om de website internationaal
-                  te lanceren, ik heb gewerkt aan een nieuwe interactieve
-                  styleguide en deze vervolgens gekoppeld aan het
-                  SampleStore project.
+                  verkopers zijn. Het doel is om de website internationaal te
+                  lanceren, ik heb gewerkt aan een nieuwe interactieve
+                  styleguide en deze vervolgens gekoppeld aan het SampleStore
+                  project.
                 </p>
               </div>
             </li>
