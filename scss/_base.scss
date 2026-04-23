@@ -1,0 +1,39 @@
+// =============================================================================
+// ELEMENTS: BASE
+// Bare HTML element styling — no classes
+// =============================================================================
+
+body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+a {
+  color: $color-primary;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+section {
+  padding: $space-7 0;
+}

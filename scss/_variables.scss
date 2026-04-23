@@ -1,0 +1,51 @@
+// =============================================================================
+// SETTINGS: VARIABLES
+// Brand colors, spacing scale, breakpoints, z-index scale
+// =============================================================================
+
+// --- Brand Colors ---
+$color-primary:   #1A1A1A;   // Deep black — headings, navbar, buttons
+$color-accent:    #FFC43C;   // Amber yellow — highlights, blobs, hovers
+$color-bg:        #FFFFFF;   // White — page background
+$color-text:      #333333;   // Dark grey — body text
+$color-subtle:    #F7F7F7;   // Off-white — alternate section backgrounds
+$color-muted:     #999999;   // Muted grey — labels, meta text
+
+// --- Typography ---
+$font-display:    'Syne', sans-serif;       // Bold headings
+$font-body:       'DM Sans', sans-serif;    // Body & UI text
+
+$font-size-base:  1rem;       // 16px
+$line-height-base: 1.6;
+
+// --- Spacing scale (8px base) ---
+$space-1:  0.5rem;    // 8px
+$space-2:  1rem;      // 16px
+$space-3:  1.5rem;    // 24px
+$space-4:  2rem;      // 32px
+$space-5:  3rem;      // 48px
+$space-6:  4rem;      // 64px
+$space-7:  6rem;      // 96px
+$space-8:  8rem;      // 128px
+
+// --- Breakpoints ---
+$bp-sm:   480px;
+$bp-md:   768px;
+$bp-lg:   1024px;
+$bp-xl:   1280px;
+
+// --- Z-index scale ---
+$z-base:      1;
+$z-raised:    10;
+$z-navbar:    100;
+$z-overlay:   200;
+
+// --- Border radius ---
+$radius-sm:   4px;
+$radius-md:   8px;
+$radius-lg:   16px;
+$radius-full: 9999px;
+
+// --- Transitions ---
+$transition-base: 0.25s ease;
+$transition-slow: 0.45s ease;

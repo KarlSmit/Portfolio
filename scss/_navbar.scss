@@ -1,0 +1,86 @@
+// =============================================================================
+// COMPONENTS: NAVBAR
+// Sticky navigation bar — logo left, anchor links right
+// =============================================================================
+
+.c-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-navbar;
+  background-color: $color-bg;
+  border-bottom: 2px solid transparent;
+  transition: border-color $transition-base, box-shadow $transition-base;
+
+  // JS adds this class on scroll
+  &--scrolled {
+    border-color: $color-accent;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  &__inner {
+    @include flex(row, space-between, center);
+    height: 72px;
+  }
+
+  &__logo {
+    font-family: $font-display;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: $color-primary;
+    letter-spacing: -0.02em;
+
+    span {
+      color: $color-accent;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include respond-to(md) {
+      @include flex(row, flex-end, center, $space-3);
+    }
+  }
+
+  &__link {
+    font-family: $font-body;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $color-text;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: color $transition-base, border-color $transition-base;
+
+    &:hover,
+    &--active {
+      color: $color-primary;
+      border-color: $color-accent;
+    }
+  }
+
+  // Mobile hamburger toggle (shown on small screens)
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: $space-1;
+
+    @include respond-to(md) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $color-primary;
+      transition: transform $transition-base, opacity $transition-base;
+    }
+  }
+}

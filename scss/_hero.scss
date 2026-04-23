@@ -1,0 +1,116 @@
+// =============================================================================
+// COMPONENTS: HERO
+// Full-screen intro section with blob decorations and bold typography
+// =============================================================================
+
+.c-hero {
+  position: relative;
+  min-height: 100vh;
+  @include flex(column, center, flex-start);
+  padding-top: 72px; // navbar height offset
+  overflow: hidden;
+
+  // Decorative blob — top right
+  &__blob-1 {
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    width: clamp(300px, 45vw, 600px);
+    aspect-ratio: 1;
+    background-color: $color-accent;
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    opacity: 0.9;
+    z-index: $z-base;
+    animation: blob-morph 8s ease-in-out infinite;
+  }
+
+  // Decorative blob — bottom left
+  &__blob-2 {
+    position: absolute;
+    bottom: -60px;
+    left: -80px;
+    width: clamp(150px, 25vw, 300px);
+    aspect-ratio: 1;
+    background-color: $color-primary;
+    border-radius: 40% 60% 30% 70% / 60% 40% 50% 50%;
+    z-index: $z-base;
+    animation: blob-morph 10s ease-in-out infinite reverse;
+  }
+
+  &__content {
+    position: relative;
+    z-index: $z-raised;
+    max-width: 680px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $color-muted;
+    margin-bottom: $space-2;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: $color-primary;
+    margin-bottom: $space-2;
+
+    &-accent {
+      color: $color-accent;
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: $color-text;
+    max-width: 480px;
+    margin-bottom: $space-5;
+    line-height: 1.7;
+  }
+
+  &__actions {
+    @include flex(row, flex-start, center, $space-2);
+    flex-wrap: wrap;
+  }
+
+  &__scroll-hint {
+    position: absolute;
+    bottom: $space-4;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex(column, center, center, $space-1);
+    font-size: 0.75rem;
+    color: $color-muted;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background-color: $color-accent;
+      animation: scroll-line 1.5s ease-in-out infinite;
+    }
+  }
+}
+
+// --- Blob morph animation ---
+@keyframes blob-morph {
+  0%, 100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+  33%       { border-radius: 40% 60% 30% 70% / 60% 40% 70% 30%; }
+  66%       { border-radius: 70% 30% 50% 50% / 30% 70% 60% 40%; }
+}
+
+@keyframes scroll-line {
+  0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+  100% { transform: scaleY(1); transform-origin: top; opacity: 0; }
+}

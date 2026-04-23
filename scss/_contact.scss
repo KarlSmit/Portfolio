@@ -1,0 +1,98 @@
+// =============================================================================
+// COMPONENTS: CONTACT
+// Contact sectie — LinkedIn link + mailadres als tekst
+// =============================================================================
+
+.c-contact {
+  &__inner {
+    @include flex(column, center, flex-start, $space-5);
+
+    @include respond-to(md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__section-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: $space-1;
+  }
+
+  &__tagline {
+    font-family: $font-display;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: $color-primary;
+    max-width: 500px;
+  }
+
+  &__links {
+    @include flex(column, flex-start, flex-start, $space-2);
+    flex-shrink: 0;
+  }
+
+  &__mail {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-text;
+    letter-spacing: 0.01em;
+  }
+}
+
+// --- Button styles (used in hero & contact) ---
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-1;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: $radius-full;
+  transition: background-color $transition-base, color $transition-base, transform $transition-base;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: #ffffff;
+
+    &:hover {
+      background-color: $color-accent;
+      color: $color-primary;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--linkedin {
+    background-color: $color-accent;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+  }
+}

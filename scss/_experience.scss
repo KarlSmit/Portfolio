@@ -1,0 +1,98 @@
+// =============================================================================
+// COMPONENTS: EXPERIENCE
+// Werkervaring tijdlijn
+// =============================================================================
+
+.c-experience {
+  &__header {
+    margin-bottom: $space-6;
+  }
+
+  &__section-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: $space-1;
+  }
+
+  &__timeline {
+    position: relative;
+    padding-left: $space-4;
+
+    @include respond-to(md) {
+      padding-left: $space-6;
+    }
+
+    // Vertical line
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, $color-accent, rgba($color-accent, 0));
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: $space-5;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    // Dot on the line
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(-#{$space-4} - 5px);
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      background-color: $color-accent;
+      border-radius: 50%;
+      border: 2px solid $color-bg;
+      box-shadow: 0 0 0 2px $color-accent;
+
+      @include respond-to(md) {
+        left: calc(-#{$space-6} - 5px);
+      }
+    }
+  }
+
+  &__period {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $color-muted;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: $space-1;
+  }
+
+  &__role {
+    font-family: $font-display;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 0.25rem;
+  }
+
+  &__company {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $color-accent;
+    margin-bottom: $space-2;
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    color: $color-text;
+    line-height: 1.7;
+    max-width: 580px;
+  }
+}

@@ -1,0 +1,31 @@
+// =============================================================================
+// MAIN.SCSS — ITCSS Entry Point
+// Import order matters: wide → specific (Inverted Triangle)
+// =============================================================================
+
+// 1. SETTINGS — variables, config (no CSS output)
+@use '1-settings/variables' as *;
+
+// 2. TOOLS — mixins, functions (no CSS output)
+@use '2-tools/mixins' as *;
+
+// 3. GENERIC — resets, normalize
+@use '3-generic/reset';
+
+// 4. ELEMENTS — bare HTML elements
+@use '4-elements/base';
+@use '4-elements/headings';
+
+// 5. OBJECTS — layout patterns (no cosmetics)
+@use '5-objects/container';
+
+// 6. COMPONENTS — UI components
+@use '6-components/navbar';
+@use '6-components/hero';
+@use '6-components/skills';
+@use '6-components/experience';
+@use '6-components/projects';
+@use '6-components/contact';
+
+// 7. UTILITIES — overrides, helpers
+@use '7-utilities/helpers';

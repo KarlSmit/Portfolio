@@ -1,0 +1,19 @@
+// =============================================================================
+// OBJECTS: CONTAINER
+// Layout wrapper — max-width + horizontal padding
+// =============================================================================
+
+.o-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $space-3;
+
+  @include respond-to(md) {
+    padding-inline: $space-5;
+  }
+
+  @include respond-to(xl) {
+    padding-inline: $space-4;
+  }
+}
