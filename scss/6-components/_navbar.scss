@@ -11,7 +11,9 @@
   z-index: $z-navbar;
   background-color: $color-bg;
   border-bottom: 2px solid transparent;
-  transition: border-color $transition-base, box-shadow $transition-base;
+  transition:
+    border-color $transition-base,
+    box-shadow $transition-base;
 
   // JS adds this class on scroll
   &--scrolled {
@@ -55,7 +57,9 @@
     color: $color-text;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
-    transition: color $transition-base, border-color $transition-base;
+    transition:
+      color $transition-base,
+      border-color $transition-base;
 
     &:hover,
     &--active {
@@ -80,7 +84,9 @@
       width: 24px;
       height: 2px;
       background-color: $color-primary;
-      transition: transform $transition-base, opacity $transition-base;
+      transition:
+        transform $transition-base,
+        opacity $transition-base;
     }
   }
 }

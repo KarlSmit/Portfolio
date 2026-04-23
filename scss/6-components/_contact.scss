@@ -56,7 +56,10 @@
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: $radius-full;
-  transition: background-color $transition-base, color $transition-base, transform $transition-base;
+  transition:
+    background-color $transition-base,
+    color $transition-base,
+    transform $transition-base;
 
   &:focus-visible {
     @include focus-ring;

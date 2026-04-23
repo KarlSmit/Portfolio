@@ -41,7 +41,9 @@
     border-radius: $radius-lg;
     padding: $space-4;
     border: 1.5px solid darken($color-subtle, 4%);
-    transition: transform $transition-base, border-color $transition-base;
+    transition:
+      transform $transition-base,
+      border-color $transition-base;
 
     &:hover {
       transform: translateY(-4px);
@@ -125,6 +127,13 @@
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(1.3); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
 }

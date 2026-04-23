@@ -6,13 +6,21 @@
 // --- Responsive breakpoints ---
 @mixin respond-to($bp) {
   @if $bp == sm {
-    @media (min-width: $bp-sm) { @content; }
+    @media (min-width: $bp-sm) {
+      @content;
+    }
   } @else if $bp == md {
-    @media (min-width: $bp-md) { @content; }
+    @media (min-width: $bp-md) {
+      @content;
+    }
   } @else if $bp == lg {
-    @media (min-width: $bp-lg) { @content; }
+    @media (min-width: $bp-lg) {
+      @content;
+    }
   } @else if $bp == xl {
-    @media (min-width: $bp-xl) { @content; }
+    @media (min-width: $bp-xl) {
+      @content;
+    }
   }
 }
 
@@ -22,7 +30,9 @@
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-  @if $gap != 0 { gap: $gap; }
+  @if $gap != 0 {
+    gap: $gap;
+  }
 }
 
 @mixin flex-center {

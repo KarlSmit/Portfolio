@@ -64,7 +64,9 @@
     padding: 0.3rem 0.75rem;
     border-radius: $radius-full;
     border: 1.5px solid transparent;
-    transition: border-color $transition-base, background-color $transition-base;
+    transition:
+      border-color $transition-base,
+      background-color $transition-base;
 
     &:hover {
       border-color: $color-accent;
