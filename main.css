@@ -459,7 +459,7 @@ h6 {
 }
 .experience__item {
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 .experience__item:last-child {
   padding-bottom: 0;
