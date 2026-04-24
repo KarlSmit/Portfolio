@@ -6,7 +6,7 @@
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
-.c-experience {
+.experience {
   &__header {
     margin-bottom: $space-6;
   }

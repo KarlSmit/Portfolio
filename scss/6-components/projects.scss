@@ -6,7 +6,7 @@
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
-.c-projects {
+.projects {
   background-color: $color-subtle;
 
   &__header {

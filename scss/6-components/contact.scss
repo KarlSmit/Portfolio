@@ -7,7 +7,7 @@
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
-.c-contact {
+.contact {
   &__inner {
     @include flex(column, center, flex-start, $space-5);
 
@@ -51,7 +51,7 @@
 }
 
 // --- Button styles (used in hero & contact) ---
-.c-btn {
+.btn {
   display: inline-flex;
   align-items: center;
   gap: $space-1;

@@ -25,25 +25,25 @@
     <!-- =====================================================================
        NAVBAR
   ====================================================================== -->
-    <header class="c-navbar" role="banner">
+    <header class="navbar" role="banner">
       <div class="o-container">
-        <div class="c-navbar__inner">
+        <div class="navbar__inner">
           <!-- Logo / naam -->
-          <a href="#hero" class="c-navbar__logo" aria-label="Terug naar boven">
+          <a href="#hero" class="navbar__logo" aria-label="Terug naar boven">
             [Naam]<span>.</span>
           </a>
 
           <!-- Anchor navigatie -->
-          <nav class="c-navbar__nav" aria-label="Hoofdnavigatie">
-            <a href="#skills" class="c-navbar__link">Skills</a>
-            <a href="#experience" class="c-navbar__link">Ervaring</a>
-            <a href="#projects" class="c-navbar__link">Projecten</a>
-            <a href="#contact" class="c-navbar__link">Contact</a>
+          <nav class="navbar__nav" aria-label="Hoofdnavigatie">
+            <a href="#skills" class="navbar__link">Skills</a>
+            <a href="#experience" class="navbar__link">Ervaring</a>
+            <a href="#projects" class="navbar__link">Projecten</a>
+            <a href="#contact" class="navbar__link">Contact</a>
           </nav>
 
           <!-- Mobile toggle (functionaliteit uit te breiden) -->
           <button
-            class="c-navbar__toggle"
+            class="navbar__toggle"
             aria-label="Menu openen"
             aria-expanded="false"
           >
@@ -59,77 +59,73 @@
       <!-- ===================================================================
          HERO + OVER MIJ
     ==================================================================== -->
-      <section class="c-hero" id="hero" aria-label="Introductie">
+      <section class="hero" id="hero" aria-label="Introductie">
         <!-- Decoratieve blobs -->
-        <div class="c-hero__blob-1" aria-hidden="true"></div>
-        <div class="c-hero__blob-2" aria-hidden="true"></div>
+        <div class="hero__blob-1" aria-hidden="true"></div>
+        <div class="hero__blob-2" aria-hidden="true"></div>
 
         <div class="o-container">
-          <div class="c-hero__content">
-            <span class="c-hero__label">Junior Front-end Developer</span>
+          <div class="hero__content">
+            <span class="hero__label">Junior Front-end Developer</span>
 
-            <h1 class="c-hero__title">
+            <h1 class="hero__title">
               Hoi, ik ben
-              <span class="c-hero__title-accent">[Jouw Naam].</span>
+              <span class="hero__title-accent">[Jouw Naam].</span>
             </h1>
 
-            <p class="c-hero__subtitle">
+            <p class="hero__subtitle">
               Ik bouw nette, toegankelijke interfaces met HTML, Razor en SCSS.
               Momenteel aan het groeien als developer en altijd op zoek naar
               nieuwe uitdagingen.
             </p>
 
-            <div class="c-hero__actions">
-              <a href="#projects" class="c-btn c-btn--primary"
-                >Bekijk mijn werk</a
-              >
-              <a href="#contact" class="c-btn c-btn--outline"
-                >Neem contact op</a
-              >
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">Bekijk mijn werk</a>
+              <a href="#contact" class="btn btn--outline">Neem contact op</a>
             </div>
           </div>
         </div>
 
-        <div class="c-hero__scroll-hint" aria-hidden="true">scroll</div>
+        <div class="hero__scroll-hint" aria-hidden="true">scroll</div>
       </section>
 
       <!-- ===================================================================
          SKILLS & TECHNIEKEN
     ==================================================================== -->
-      <section class="c-skills" id="skills" aria-label="Skills en technieken">
+      <section class="skills" id="skills" aria-label="Skills en technieken">
         <div class="o-container">
-          <header class="c-skills__header">
-            <span class="c-skills__section-label">Mijn toolkit</span>
+          <header class="skills__header">
+            <span class="skills__section-label">Mijn toolkit</span>
             <h2>Skills &amp; technieken</h2>
           </header>
 
-          <div class="c-skills__grid">
-            <div class="c-skills__category">
-              <h3 class="c-skills__category-title">Markup &amp; templating</h3>
-              <ul class="c-skills__tags">
-                <li class="c-skills__tag">HTML5</li>
-                <li class="c-skills__tag">Razor Pages</li>
-                <li class="c-skills__tag">Semantic HTML</li>
+          <div class="skills__grid">
+            <div class="skills__category">
+              <h3 class="skills__category-title">Markup &amp; templating</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">HTML5</li>
+                <li class="skills__tag">Razor Pages</li>
+                <li class="skills__tag">Semantic HTML</li>
               </ul>
             </div>
 
-            <div class="c-skills__category">
-              <h3 class="c-skills__category-title">Styling</h3>
-              <ul class="c-skills__tags">
-                <li class="c-skills__tag">CSS3</li>
-                <li class="c-skills__tag">SCSS</li>
-                <li class="c-skills__tag">PCSS</li>
-                <li class="c-skills__tag">BEM</li>
-                <li class="c-skills__tag">ITCSS</li>
+            <div class="skills__category">
+              <h3 class="skills__category-title">Styling</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">CSS3</li>
+                <li class="skills__tag">SCSS</li>
+                <li class="skills__tag">PCSS</li>
+                <li class="skills__tag">BEM</li>
+                <li class="skills__tag">ITCSS</li>
               </ul>
             </div>
 
-            <div class="c-skills__category">
-              <h3 class="c-skills__category-title">Tools &amp; workflow</h3>
-              <ul class="c-skills__tags">
-                <li class="c-skills__tag">VS Code</li>
-                <li class="c-skills__tag">Git</li>
-                <li class="c-skills__tag">GitHub</li>
+            <div class="skills__category">
+              <h3 class="skills__category-title">Tools &amp; workflow</h3>
+              <ul class="skills__tags">
+                <li class="skills__tag">VS Code</li>
+                <li class="skills__tag">Git</li>
+                <li class="skills__tag">GitHub</li>
               </ul>
             </div>
           </div>
@@ -139,29 +135,29 @@
       <!-- ===================================================================
          WERKERVARING / TIJDLIJN
     ==================================================================== -->
-      <section class="c-experience" id="experience" aria-label="Werkervaring">
+      <section class="experience" id="experience" aria-label="Werkervaring">
         <div class="o-container">
-          <header class="c-experience__header">
-            <span class="c-experience__section-label">Mijn pad</span>
+          <header class="experience__header">
+            <span class="experience__section-label">Mijn pad</span>
             <h2>Werkervaring</h2>
           </header>
 
-          <ol class="c-experience__timeline">
-            <li class="c-experience__item">
-              <time class="c-experience__period">2024 — heden</time>
-              <h3 class="c-experience__role">Junior Front-end Developer</h3>
-              <span class="c-experience__company">[Bedrijfsnaam]</span>
-              <p class="c-experience__description">
+          <ol class="experience__timeline">
+            <li class="experience__item">
+              <time class="experience__period">2024 — heden</time>
+              <h3 class="experience__role">Junior Front-end Developer</h3>
+              <span class="experience__company">[Bedrijfsnaam]</span>
+              <p class="experience__description">
                 Omschrijving van je taken en verantwoordelijkheden. Wat heb je
                 gebouwd? Welke technieken heb je gebruikt? Wat heb je geleerd?
               </p>
             </li>
 
-            <li class="c-experience__item">
-              <time class="c-experience__period">2022 — 2024</time>
-              <h3 class="c-experience__role">[Vorige rol]</h3>
-              <span class="c-experience__company">[Bedrijfsnaam]</span>
-              <p class="c-experience__description">
+            <li class="experience__item">
+              <time class="experience__period">2022 — 2024</time>
+              <h3 class="experience__role">[Vorige rol]</h3>
+              <span class="experience__company">[Bedrijfsnaam]</span>
+              <p class="experience__description">
                 Korte omschrijving van je vorige rol of stage. 2-3 zinnen is
                 genoeg om een goed beeld te geven.
               </p>
@@ -173,19 +169,19 @@
       <!-- ===================================================================
          PROJECTEN
     ==================================================================== -->
-      <section class="c-projects" id="projects" aria-label="Projecten">
+      <section class="projects" id="projects" aria-label="Projecten">
         <div class="o-container">
-          <header class="c-projects__header">
-            <span class="c-projects__section-label">Wat ik bouw</span>
+          <header class="projects__header">
+            <span class="projects__section-label">Wat ik bouw</span>
             <h2>Projecten</h2>
           </header>
 
-          <div class="c-projects__grid">
+          <div class="projects__grid">
             <!-- Echt project: dit portfolio zelf -->
-            <article class="c-projects__card">
-              <span class="c-projects__card-label">HTML · SCSS · JS</span>
-              <h3 class="c-projects__card-title">Dit portfolio</h3>
-              <p class="c-projects__card-desc">
+            <article class="projects__card">
+              <span class="projects__card-label">HTML · SCSS · JS</span>
+              <h3 class="projects__card-title">Dit portfolio</h3>
+              <p class="projects__card-desc">
                 Gebouwd met HTML, SCSS (ITCSS + BEM) en Vanilla JS. Eerste
                 persoonlijke project om mijn skills te laten zien.
               </p>
@@ -193,26 +189,26 @@
 
             <!-- Coming soon placeholders -->
             <article
-              class="c-projects__card c-projects__card--placeholder"
+              class="projects__card projects__card--placeholder"
               aria-label="Binnenkort"
             >
-              <span class="c-projects__coming-soon">Coming soon</span>
+              <span class="projects__coming-soon">Coming soon</span>
             </article>
 
             <article
-              class="c-projects__card c-projects__card--placeholder"
+              class="projects__card projects__card--placeholder"
               aria-label="Binnenkort"
             >
-              <span class="c-projects__coming-soon">Coming soon</span>
+              <span class="projects__coming-soon">Coming soon</span>
             </article>
           </div>
 
           <!-- Nu bezig met -->
-          <div class="c-projects__current">
-            <div class="c-projects__current-dot" aria-hidden="true"></div>
+          <div class="projects__current">
+            <div class="projects__current-dot" aria-hidden="true"></div>
             <div>
-              <span class="c-projects__current-label">Nu bezig met</span>
-              <p class="c-projects__current-text">
+              <span class="projects__current-label">Nu bezig met</span>
+              <p class="projects__current-text">
                 Dit portfolio bouwen — HTML, SCSS (ITCSS + BEM) en Vanilla JS.
               </p>
             </div>
@@ -223,27 +219,27 @@
       <!-- ===================================================================
          CONTACT
     ==================================================================== -->
-      <section class="c-contact" id="contact" aria-label="Contact">
+      <section class="contact" id="contact" aria-label="Contact">
         <div class="o-container">
-          <div class="c-contact__inner">
+          <div class="contact__inner">
             <div>
-              <span class="c-contact__section-label">Laten we praten</span>
-              <h2 class="c-contact__tagline">
+              <span class="contact__section-label">Laten we praten</span>
+              <h2 class="contact__tagline">
                 Interesse in samenwerken<br />of gewoon hallo zeggen?
               </h2>
             </div>
 
-            <div class="c-contact__links">
+            <div class="contact__links">
               <a
                 href="https://linkedin.com/in/[jouw-profiel]"
-                class="c-btn c-btn--linkedin"
+                class="btn btn--linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Bekijk mijn LinkedIn profiel (opent in nieuw tabblad)"
               >
                 LinkedIn
               </a>
-              <span class="c-contact__mail">[jouwnaam@email.com]</span>
+              <span class="contact__mail">[jouwnaam@email.com]</span>
             </div>
           </div>
         </div>
