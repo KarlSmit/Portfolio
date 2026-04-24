@@ -3,6 +3,9 @@
 // Projecten sectie — kaartjes + coming soon + nu bezig met
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 .c-projects {
   background-color: $color-subtle;
 

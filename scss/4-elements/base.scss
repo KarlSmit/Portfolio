@@ -3,6 +3,9 @@
 // Bare HTML element styling — no classes
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 body {
   font-family: $font-body;
   font-size: $font-size-base;

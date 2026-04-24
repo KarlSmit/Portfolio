@@ -3,6 +3,9 @@
 // Skills & technieken sectie — tag-grid per categorie
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 .c-skills {
   background-color: $color-subtle;
 

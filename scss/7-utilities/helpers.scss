@@ -3,6 +3,9 @@
 // Single-purpose utility classes
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 .u-visually-hidden {
   @include visually-hidden;
 }

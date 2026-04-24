@@ -3,6 +3,9 @@
 // Default heading sizes — no classes
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 h1 {
   @include heading(clamp(2.5rem, 6vw, 5rem));
 }

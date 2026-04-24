@@ -4,28 +4,22 @@
 // =============================================================================
 
 // 1. SETTINGS — variables, config (no CSS output)
-@use "scss/1-settings/variables" as *;
+@use "scss/1-settings/settings";
 
 // 2. TOOLS — mixins, functions (no CSS output)
-@use "scss/2-tools/mixins" as *;
+@use "scss/2-tools/tools";
 
 // 3. GENERIC — resets, normalize
-@use "scss/3-generic/reset";
+@use "scss/3-generic/generic";
 
 // 4. ELEMENTS — bare HTML elements
-@use "scss/4-elements/base";
-@use "scss/4-elements/headings";
+@use "scss/4-elements/elements";
 
 // 5. OBJECTS — layout patterns (no cosmetics)
-@use "scss/5-objects/container";
+@use "scss/5-objects/object";
 
 // 6. COMPONENTS — UI components
-@use "scss/6-components/navbar";
-@use "scss/6-components/hero";
-@use "scss/6-components/skills";
-@use "scss/6-components/experience";
-@use "scss/6-components/projects";
-@use "scss/6-components/contact";
+@use "scss/6-components/components";
 
 // 7. UTILITIES — overrides, helpers
-@use "scss/7-utilities/helpers";
+@use "scss/7-utilities/utitlities";

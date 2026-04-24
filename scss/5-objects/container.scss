@@ -3,6 +3,9 @@
 // Layout wrapper — max-width + horizontal padding
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
 .o-container {
   width: 100%;
   max-width: 1200px;

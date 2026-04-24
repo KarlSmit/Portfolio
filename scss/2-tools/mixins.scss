@@ -3,6 +3,8 @@
 // Reusable SCSS mixins — media queries, flex helpers, typography
 // =============================================================================
 
+@use "../1-settings/variables" as *;
+
 // --- Responsive breakpoints ---
 @mixin respond-to($bp) {
   @if $bp == sm {
