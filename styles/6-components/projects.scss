@@ -43,7 +43,7 @@
     background-color: $color-bg;
     border-radius: $radius-lg;
     padding: $space-4;
-    border: 1.5px solid darken($color-subtle, 4%);
+    border: 1.5px solid $color-subtle-dark;
     transition:
       transform $transition-base,
       border-color $transition-base;
