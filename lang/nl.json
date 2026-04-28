@@ -5,6 +5,7 @@
     "htmlLang": "nl"
   },
   "nav": {
+    "logo": "Karl Smit <span>.</span>",
     "logoAria": "Terug naar boven",
     "menuAria": "Hoofdnavigatie",
     "toggleAria": "Menu openen",
@@ -22,7 +23,7 @@
   },
   "hero": {
     "sectionAria": "Introductie",
-    "label": "Junior Front-end Developer",
+    "label": "Front-end Developer",
     "greeting": "Hoi, ik ben",
     "name": "Karl Smit.",
     "subtitle": "Ik bouw nette, toegankelijke interfaces met HTML, Razor en SCSS. Momenteel aan het groeien als developer en altijd op zoek naar nieuwe uitdagingen.",
@@ -49,13 +50,13 @@
         "company": "ChipSoft Nederland · Fulltime",
         "description": "Na hier aan de slag te zijn geweest voor me afstudeer ComakerShip en als werkstudent, begin ik hier mijn fulltime carrière als Front-end Developer. Ik hoop veel nieuws te leren over mijn vak en ook vooral het bedrijfsleven, op weg naar een nieuw avontuur!"
       },
-      "chipsoftLeerwerk": {
+      "chipsoftWorkStudent": {
         "period": "sep. 2024 — jan. 2025",
         "role": "Front-end Developer",
         "company": "ChipSoft Nederland · Leerwerktraject",
         "description": "Na mijn afstudeer ComakerShip bij ChipSoft ben ik daar tijdelijk als werkstudent Front-end Developer aan de gang gegaan totdat ik mijn diploma voor Software Engineer had gehaald."
       },
-      "chipsoftAfstudeer": {
+      "chipsoftGraduate": {
         "period": "apr. 2024 — aug. 2024",
         "role": "Software Developer",
         "company": "ChipSoft Nederland · Afstudeer Comakership",
@@ -73,7 +74,7 @@
         "company": "Happy Horizon · Comakership",
         "description": "Voor het 2e semester van mijn schooljaar 2022/2023 mag ik weer stage lopen als software engineer. Hiervoor ga ik als Front-end Developer aan de slag bij Material District in Naarden onder begeleiding van mijn collega's bij het software bedrijf Happy Horizon."
       },
-      "doItBigContract": {
+      "doItBigWorkStudent": {
         "period": "jul. 2022 — jan. 2023",
         "role": "Software Developer",
         "company": "Do IT Big · Tijdelijk contract",

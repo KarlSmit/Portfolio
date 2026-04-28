@@ -22,13 +22,17 @@
     <header class="navbar" role="banner">
       <div class="o-container">
         <div class="navbar__inner">
-          <!-- = Logo / naam = -->
-          <a href="#hero" class="navbar__logo" aria-label="{nav.logoAria}">
+          <!-- = Logo / Name = -->
+          <a
+            href="#hero"
+            class="navbar__logo"
+            aria-label="{nav.logoAria}"
+            data-i18n-html="nav.logo">
             Karl Smit
             <span>.</span>
           </a>
 
-          <!-- = Anchor navigatie = -->
+          <!-- = Anchor navigation = -->
           <nav class="navbar__nav" aria-label="{nav.menuAria}">
             <a href="#skills" class="navbar__link">{nav.skills}</a>
             <a href="#experience" class="navbar__link">{nav.experience}</a>
@@ -102,7 +106,7 @@
             </button>
           </div>
 
-          <!-- = Mobile toggle (functionaliteit uit te breiden) = -->
+          <!-- = Mobile toggle (expandable functionality) = -->
           <button
             class="navbar__toggle"
             aria-label="{nav.toggleAria}"
@@ -116,9 +120,9 @@
     </header>
 
     <main>
-      <!-- === HERO + OVER MIJ === -->
+      <!-- === HERO + ABOUT ME === -->
       <section class="hero" id="hero" aria-label="{hero.sectionAria}">
-        <!-- = Decoratieve blobs = -->
+        <!-- = Decorative blobs = -->
         <div class="hero__blob-1" aria-hidden="true"></div>
         <div class="hero__blob-2" aria-hidden="true"></div>
 
@@ -147,7 +151,7 @@
         </div>
       </section>
 
-      <!-- === SKILLS & TECHNIEKEN === -->
+      <!-- === SKILLS & TECHNIQUES === -->
       <section class="skills" id="skills" aria-label="{skills.sectionAria}">
         <div class="o-container">
           <header class="skills__header">
@@ -189,7 +193,7 @@
         </div>
       </section>
 
-      <!-- === WERKERVARING / TIJDLIJN === -->
+      <!-- === WORK EXPERIENCE & TIMELINE === -->
       <section
         class="experience"
         id="experience"
@@ -220,32 +224,32 @@
 
             <li class="experience__item">
               <time class="experience__period">
-                {experience.items.chipsoftLeerwerk.period}
+                {experience.items.chipsoftWorkStudent.period}
               </time>
               <h3 class="experience__role">
-                {experience.items.chipsoftLeerwerk.role}
+                {experience.items.chipsoftWorkStudent.role}
               </h3>
               <span class="experience__company">
-                {experience.items.chipsoftLeerwerk.company}
+                {experience.items.chipsoftWorkStudent.company}
               </span>
               <p class="experience__description">
-                {experience.items.chipsoftLeerwerk.description}
+                {experience.items.chipsoftWorkStudent.description}
               </p>
             </li>
 
             <li class="experience__item">
               <time class="experience__period">
-                {experience.items.chipsoftAfstudeer.period}
+                {experience.items.chipsoftGraduate.period}
               </time>
               <h3 class="experience__role">
-                {experience.items.chipsoftAfstudeer.role}
+                {experience.items.chipsoftGraduate.role}
               </h3>
               <span class="experience__company">
-                {experience.items.chipsoftAfstudeer.company}
+                {experience.items.chipsoftGraduate.company}
               </span>
               <p
                 class="experience__description"
-                data-i18n-html="experience.items.chipsoftAfstudeer.description">
+                data-i18n-html="experience.items.chipsoftGraduate.description">
                 Voor mijn afstudeer comaker mag ik als frontend developer aan de
                 slag bij ChipSoft.
               </p>
@@ -283,16 +287,16 @@
 
             <li class="experience__item">
               <time class="experience__period">
-                {experience.items.doItBigContract.period}
+                {experience.items.doItBigWorkStudent.period}
               </time>
               <h3 class="experience__role">
-                {experience.items.doItBigContract.role}
+                {experience.items.doItBigWorkStudent.role}
               </h3>
               <span class="experience__company">
-                {experience.items.doItBigContract.company}
+                {experience.items.doItBigWorkStudent.company}
               </span>
               <p class="experience__description">
-                {experience.items.doItBigContract.description}
+                {experience.items.doItBigWorkStudent.description}
               </p>
             </li>
 
@@ -314,7 +318,7 @@
         </div>
       </section>
 
-      <!-- === PROJECTEN === -->
+      <!-- === PROJECTS === -->
       <section
         class="projects"
         id="projects"
@@ -326,7 +330,7 @@
           </header>
 
           <div class="projects__grid">
-            <!-- Echt project: dit portfolio zelf -->
+            <!-- Portfolio -->
             <article class="projects__card">
               <span class="projects__card-label"
                 >{projects.portfolioLabel}</span
@@ -349,7 +353,7 @@
             </article>
           </div>
 
-          <!-- = Nu bezig met = -->
+          <!-- = Working on = -->
           <div class="projects__current">
             <div class="projects__current-dot" aria-hidden="true"></div>
             <div>

@@ -40,10 +40,6 @@
     // Active language (set via aria-pressed by JS)
     &[aria-pressed="true"] {
       opacity: 1;
-
-      .lang-switcher__flag {
-        box-shadow: 0 0 0 2px $color-accent;
-      }
     }
   }
 

@@ -279,9 +279,6 @@ h6 {
 .lang-switcher__btn[aria-pressed=true] {
   opacity: 1;
 }
-.lang-switcher__btn[aria-pressed=true] .lang-switcher__flag {
-  box-shadow: 0 0 0 2px #ffc43c;
-}
 .lang-switcher__flag {
   display: block;
   width: 22px;

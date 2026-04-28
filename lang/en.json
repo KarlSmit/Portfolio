@@ -5,6 +5,7 @@
     "htmlLang": "en"
   },
   "nav": {
+    "logo": "Karl Smit <span>.</span>",
     "logoAria": "Back to top",
     "menuAria": "Main navigation",
     "toggleAria": "Open menu",
@@ -22,7 +23,7 @@
   },
   "hero": {
     "sectionAria": "Introduction",
-    "label": "Junior Front-end Developer",
+    "label": "Front-end Developer",
     "greeting": "Hi, I'm",
     "name": "Karl Smit.",
     "subtitle": "I build clean, accessible interfaces with HTML, Razor and SCSS. Currently growing as a developer and always looking for new challenges.",
@@ -49,13 +50,13 @@
         "company": "ChipSoft Netherlands · Full-time",
         "description": "After working here for my graduation Comakership and as a working student, I'm starting my full-time career as a Front-end Developer. I hope to learn a lot about my craft and the corporate world, on the way to a new adventure!"
       },
-      "chipsoftLeerwerk": {
+      "chipsoftWorkStudent": {
         "period": "Sep 2024 — Jan 2025",
         "role": "Front-end Developer",
         "company": "ChipSoft Netherlands · Work-study program",
         "description": "After my graduation Comakership at ChipSoft, I temporarily continued there as a working student Front-end Developer until I obtained my Software Engineer diploma."
       },
-      "chipsoftAfstudeer": {
+      "chipsoftGraduate": {
         "period": "Apr 2024 — Aug 2024",
         "role": "Software Developer",
         "company": "ChipSoft Netherlands · Graduation Comakership",
@@ -73,7 +74,7 @@
         "company": "Happy Horizon · Comakership",
         "description": "For the 2nd semester of my 2022/2023 school year, I did another internship as a software engineer. I worked as a Front-end Developer at Material District in Naarden, mentored by my colleagues at the software company Happy Horizon."
       },
-      "doItBigContract": {
+      "doItBigWorkStudent": {
         "period": "Jul 2022 — Jan 2023",
         "role": "Software Developer",
         "company": "Do IT Big · Temporary contract",
