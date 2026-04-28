@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio van [Jouw Naam] — Junior Front-end Developer"
-    />
-    <title>Karl Smit — Front-end Developer</title>
+    <meta name="description" content="{meta.description}" />
+    <title>{meta.title}</title>
 
     <!-- Google Fonts: Syne (display) + DM Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,22 +24,99 @@
       <div class="o-container">
         <div class="navbar__inner">
           <!-- = Logo / naam = -->
-          <a href="#hero" class="navbar__logo" aria-label="Terug naar boven">
-            Karl Smit<span>.</span>
+          <a href="#hero" class="navbar__logo" aria-label="{nav.logoAria}">
+            Karl Smit
+            <span>.</span>
           </a>
 
           <!-- = Anchor navigatie = -->
-          <nav class="navbar__nav" aria-label="Hoofdnavigatie">
-            <a href="#skills" class="navbar__link">Skills</a>
-            <a href="#experience" class="navbar__link">Ervaring</a>
-            <a href="#projects" class="navbar__link">Projecten</a>
-            <a href="#contact" class="navbar__link">Contact</a>
+          <nav class="navbar__nav" aria-label="{nav.menuAria}">
+            <a href="#skills" class="navbar__link">{nav.skills}</a>
+            <a href="#experience" class="navbar__link">{nav.experience}</a>
+            <a href="#projects" class="navbar__link">{nav.projects}</a>
+            <a href="#contact" class="navbar__link">{nav.contact}</a>
           </nav>
+
+          <!-- = Language switcher = -->
+          <div
+            class="lang-switcher"
+            role="group"
+            aria-label="{switcher.groupAria}"
+          >
+            <button
+              type="button"
+              class="lang-switcher__btn"
+              data-lang="nl"
+              aria-label="{switcher.nlAria}"
+              aria-pressed="false"
+            >
+              <svg
+                class="lang-switcher__flag"
+                viewBox="0 0 9 6"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect width="9" height="2" y="0" fill="#AE1C28" />
+                <rect width="9" height="2" y="2" fill="#FFFFFF" />
+                <rect width="9" height="2" y="4" fill="#21468B" />
+              </svg>
+              <span class="u-visually-hidden">{switcher.nlLabel}</span>
+            </button>
+
+            <button
+              type="button"
+              class="lang-switcher__btn"
+              data-lang="en"
+              aria-label="{switcher.enAria}"
+              aria-pressed="false"
+            >
+              <svg
+                class="lang-switcher__flag"
+                viewBox="0 0 60 30"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <clipPath id="lang-uk-clip">
+                  <path d="M0,0 v30 h60 v-30 z" />
+                </clipPath>
+                <clipPath id="lang-uk-clip-2">
+                  <path
+                    d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"
+                  />
+                </clipPath>
+                <g clip-path="url(#lang-uk-clip)">
+                  <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+                  <path
+                    d="M0,0 L60,30 M60,0 L0,30"
+                    stroke="#FFFFFF"
+                    stroke-width="6"
+                  />
+                  <path
+                    d="M0,0 L60,30 M60,0 L0,30"
+                    clip-path="url(#lang-uk-clip-2)"
+                    stroke="#C8102E"
+                    stroke-width="4"
+                  />
+                  <path
+                    d="M30,0 v30 M0,15 h60"
+                    stroke="#FFFFFF"
+                    stroke-width="10"
+                  />
+                  <path
+                    d="M30,0 v30 M0,15 h60"
+                    stroke="#C8102E"
+                    stroke-width="6"
+                  />
+                </g>
+              </svg>
+              <span class="u-visually-hidden">{switcher.enLabel}</span>
+            </button>
+          </div>
 
           <!-- = Mobile toggle (functionaliteit uit te breiden) = -->
           <button
             class="navbar__toggle"
-            aria-label="Menu openen"
+            aria-label="{nav.toggleAria}"
             aria-expanded="false"
           >
             <span></span>
@@ -55,58 +129,60 @@
 
     <main>
       <!-- === HERO + OVER MIJ === -->
-      <section class="hero" id="hero" aria-label="Introductie">
+      <section class="hero" id="hero" aria-label="{hero.sectionAria}">
         <!-- = Decoratieve blobs = -->
         <div class="hero__blob-1" aria-hidden="true"></div>
         <div class="hero__blob-2" aria-hidden="true"></div>
 
         <div class="o-container">
           <div class="hero__content">
-            <span class="hero__label">Junior Front-end Developer</span>
+            <span class="hero__label">{hero.label}</span>
 
             <h1 class="hero__title">
-              Hoi, ik ben
-              <span class="hero__title-accent">Karl Smit.</span>
+              <span>{hero.greeting}</span>
+              <span class="hero__title-accent">{hero.name}</span>
             </h1>
 
-            <p class="hero__subtitle">
-              Ik bouw nette, toegankelijke interfaces met HTML, Razor en SCSS.
-              Momenteel aan het groeien als developer en altijd op zoek naar
-              nieuwe uitdagingen.
-            </p>
+            <p class="hero__subtitle">{hero.subtitle}</p>
 
             <div class="hero__actions">
-              <a href="#projects" class="btn btn--primary">Bekijk mijn werk</a>
-              <a href="#contact" class="btn btn--outline">Neem contact op</a>
+              <a href="#projects" class="btn btn--primary"
+                >{hero.ctaPrimary}</a
+              >
+              <a href="#contact" class="btn btn--outline"
+                >{hero.ctaSecondary}</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="hero__scroll-hint" aria-hidden="true">scroll</div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          {hero.scrollHint}
+        </div>
       </section>
 
       <!-- === SKILLS & TECHNIEKEN === -->
-      <section class="skills" id="skills" aria-label="Skills en technieken">
+      <section class="skills" id="skills" aria-label="{skills.sectionAria}">
         <div class="o-container">
           <header class="skills__header">
-            <span class="skills__section-label">Mijn toolkit</span>
-            <h2>Skills &amp; technieken</h2>
+            <span class="skills__section-label">{skills.sectionLabel}</span>
+            <h2>{skills.title}</h2>
           </header>
 
           <div class="skills__grid">
             <div class="skills__category">
-              <h3 class="skills__category-title">Markup &amp; templating</h3>
+              <h3 class="skills__category-title">{skills.categoryMarkup}</h3>
               <ul class="skills__tags">
                 <li class="skills__tag">HTML5</li>
                 <li class="skills__tag">Razor Pages</li>
-                <li class="skills__tag">Semantic HTML</li>
+                <li class="skills__tag">Blazor</li>
               </ul>
             </div>
 
             <div class="skills__category">
-              <h3 class="skills__category-title">Styling</h3>
+              <h3 class="skills__category-title">{skills.categoryStyling}</h3>
               <ul class="skills__tags">
-                <li class="skills__tag">CSS3</li>
+                <li class="skills__tag">CSS</li>
                 <li class="skills__tag">SCSS</li>
                 <li class="skills__tag">PCSS</li>
                 <li class="skills__tag">BEM</li>
@@ -115,8 +191,9 @@
             </div>
 
             <div class="skills__category">
-              <h3 class="skills__category-title">Tools &amp; workflow</h3>
+              <h3 class="skills__category-title">{skills.categoryTools}</h3>
               <ul class="skills__tags">
+                <li class="skills__tag">Visual Studio</li>
                 <li class="skills__tag">VS Code</li>
                 <li class="skills__tag">Git</li>
                 <li class="skills__tag">GitHub</li>
@@ -127,123 +204,126 @@
       </section>
 
       <!-- === WERKERVARING / TIJDLIJN === -->
-      <section class="experience" id="experience" aria-label="Werkervaring">
+      <section
+        class="experience"
+        id="experience"
+        aria-label="{experience.sectionAria}"
+      >
         <div class="o-container">
           <header class="experience__header">
-            <span class="experience__section-label">Mijn pad</span>
-            <h2>Werkervaring</h2>
+            <span class="experience__section-label"
+              >{experience.sectionLabel}</span
+            >
+            <h2>{experience.title}</h2>
           </header>
 
           <ol class="experience__timeline">
             <li class="experience__item">
-              <time class="experience__period">feb. 2025 — heden</time>
-              <h3 class="experience__role">Front-end Developer</h3>
+              <time class="experience__period">
+                {experience.items.chipsoftFulltime.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.chipsoftFulltime.role}
+              </h3>
               <span class="experience__company">
-                ChipSoft Nederland · Fulltime
+                {experience.items.chipsoftFulltime.company}
               </span>
               <p class="experience__description">
-                Na hier aan de slag te zijn geweest voor me afstudeer
-                ComakerShip en als werkstudent, begin ik hier mijn fulltime
-                carrière als Front-end Developer. Ik hoop veel nieuws te leren
-                over mijn vak en ook vooral het bedrijfsleven, op weg naar een
-                nieuw avontuur!
+                {experience.items.chipsoftFulltime.description}
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">sep. 2024 — jan. 2025</time>
-              <h3 class="experience__role">Front-end Developer</h3>
+              <time class="experience__period">
+                {experience.items.chipsoftLeerwerk.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.chipsoftLeerwerk.role}
+              </h3>
               <span class="experience__company">
-                ChipSoft Nederland · Leerwerktraject
+                {experience.items.chipsoftLeerwerk.company}
               </span>
               <p class="experience__description">
-                Na mijn afstudeer ComakerShip bij ChipSoft ben ik daar tijdelijk
-                als werkstudent Front-end Developer aan de gang gegaan totdat ik
-                mijn diploma voor Software Engineer had gehaald.
+                {experience.items.chipsoftLeerwerk.description}
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">apr. 2024 — aug. 2024</time>
-              <h3 class="experience__role">Software Developer</h3>
+              <time class="experience__period">
+                {experience.items.chipsoftAfstudeer.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.chipsoftAfstudeer.role}
+              </h3>
               <span class="experience__company">
-                ChipSoft Nederland · Afstudeer Comakership
+                {experience.items.chipsoftAfstudeer.company}
               </span>
-              <p class="experience__description">
+              <p
+                class="experience__description"
+                data-i18n-html="experience.items.chipsoftAfstudeer.description"
+              >
                 Voor mijn afstudeer comaker mag ik als frontend developer aan de
-                slag bij ChipSoft. ChipSoft staat al meer dan 30 jaar aan de top
-                van de zorgautomatisering. Tegenwoordig zijn ze trotse
-                marktleider als leverancier van zorg-ICT in Nederland. Met
-                revolutionaire ICT bieden zij zorginstellingen een unieke
-                totaaloplossing die alle denkbare werkprocessen binnen de
-                zorginstelling ondersteunt.
-                <br /><br />
-                ChipSoft heef een app genaamd HiX dat wordt gebruikt in
-                ziekenhuizen en andere zorginstellingen om verschillende
-                aspecten van patiëntenzorg te ondersteunen. Zo ook voor het
-                toedienen van medicatie. Het toedieningsregistratie scherm wordt
-                gebruikt om de verpleegkundige te informeren over welke
-                toedieningen een patiënt moet krijgen op vaste tijden. Hierbij
-                is het in de huidige weergave minder duidelijk waar op de dag
-                dit dient te gebeuren en daar zal ik op inspringen om hier een
-                passende oplossing voor te bedenken en te realiseren
+                slag bij ChipSoft.
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">jul. 2023 — apr. 2024</time>
-              <h3 class="experience__role">Software Developer</h3>
+              <time class="experience__period">
+                {experience.items.materialDistrict.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.materialDistrict.role}
+              </h3>
               <span class="experience__company">
-                MaterialDistrict · Tijdelijk contract
+                {experience.items.materialDistrict.company}
               </span>
               <p class="experience__description">
-                Front-end development voor MaterialDistrict aan een project
-                genaamd SampleStore, een platform voor materiaalinnovatie.
-                Werkte met HTML, CSS en PHP.
+                {experience.items.materialDistrict.description}
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">feb. 2023 — jul. 2023</time>
-              <h3 class="experience__role">Software Developer</h3>
+              <time class="experience__period">
+                {experience.items.happyHorizon.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.happyHorizon.role}
+              </h3>
               <span class="experience__company">
-                Happy Horizon · Comakership
+                {experience.items.happyHorizon.company}
               </span>
               <p class="experience__description">
-                Voor het 2e semester van mijn schooljaar 2022/2023 mag ik weer
-                stage lopen als software engineer. Hiervoor ga ik als Front-end
-                Developer aan de slag bij Material District in naarden onder
-                begeleiding van mijn collega's bij het software bedrijf Happy
-                Horizon.
+                {experience.items.happyHorizon.description}
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">jul. 2022 — jan. 2023</time>
-              <h3 class="experience__role">Software Developer</h3>
+              <time class="experience__period">
+                {experience.items.doItBigContract.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.doItBigContract.role}
+              </h3>
               <span class="experience__company">
-                Do IT Big · Tijdelijk contract
+                {experience.items.doItBigContract.company}
               </span>
               <p class="experience__description">
-                Front-end development bij Do IT Big, een maatwerk software
-                bedrijf in Utrecht. Werkte met HTML, CSS en Typescript in
-                Angular aan Foodeli.
+                {experience.items.doItBigContract.description}
               </p>
             </li>
 
             <li class="experience__item">
-              <time class="experience__period">feb. 2022 — jun. 2022</time>
-              <h3 class="experience__role">Software Developer</h3>
-              <span class="experience__company">Do IT Big · Comakership</span>
+              <time class="experience__period">
+                {experience.items.doItBigComaker.period}
+              </time>
+              <h3 class="experience__role">
+                {experience.items.doItBigComaker.role}
+              </h3>
+              <span class="experience__company">
+                {experience.items.doItBigComaker.company}
+              </span>
               <p class="experience__description">
-                Bij dit bedrijf heb ik met twee medestudenten een Comakership
-                doorlopen. We behandelden alle aspecten van een project,
-                Analyse, Adviseren, Ontwerpen, Realiseren en Management &
-                Control. Ons project betrof de ontwikkeling van Foodeli, een
-                platform vergelijkbaar met Thuisbezorgd. Als team werkten we
-                samen met onze internationale collega's aan alle delen van de
-                applicatie, van inloggen tot het plaatsen van bestellingen en
-                het personaliseren van accounts.
+                {experience.items.doItBigComaker.description}
               </p>
             </li>
           </ol>
@@ -251,37 +331,40 @@
       </section>
 
       <!-- === PROJECTEN === -->
-      <section class="projects" id="projects" aria-label="Projecten">
+      <section
+        class="projects"
+        id="projects"
+        aria-label="{projects.sectionAria}"
+      >
         <div class="o-container">
           <header class="projects__header">
-            <span class="projects__section-label">Wat ik bouw</span>
-            <h2>Projecten</h2>
+            <span class="projects__section-label"
+              >{projects.sectionLabel}</span
+            >
+            <h2>{projects.title}</h2>
           </header>
 
           <div class="projects__grid">
             <!-- Echt project: dit portfolio zelf -->
             <article class="projects__card">
-              <span class="projects__card-label">HTML · SCSS · JS</span>
-              <h3 class="projects__card-title">Dit portfolio</h3>
-              <p class="projects__card-desc">
-                Gebouwd met HTML, SCSS (ITCSS + BEM) en Vanilla JS. Eerste
-                persoonlijke project om mijn skills te laten zien.
-              </p>
+              <span class="projects__card-label">{projects.portfolioLabel}</span>
+              <h3 class="projects__card-title">{projects.portfolioTitle}</h3>
+              <p class="projects__card-desc">{projects.portfolioDesc}</p>
             </article>
 
             <!-- = Coming soon placeholders = -->
             <article
               class="projects__card projects__card--placeholder"
-              aria-label="Binnenkort"
+              aria-label="{projects.placeholderAria}"
             >
-              <span class="projects__coming-soon">Coming soon</span>
+              <span class="projects__coming-soon">{projects.comingSoon}</span>
             </article>
 
             <article
               class="projects__card projects__card--placeholder"
-              aria-label="Binnenkort"
+              aria-label="{projects.placeholderAria}"
             >
-              <span class="projects__coming-soon">Coming soon</span>
+              <span class="projects__coming-soon">{projects.comingSoon}</span>
             </article>
           </div>
 
@@ -289,22 +372,24 @@
           <div class="projects__current">
             <div class="projects__current-dot" aria-hidden="true"></div>
             <div>
-              <span class="projects__current-label">Nu bezig met</span>
-              <p class="projects__current-text">
-                Dit portfolio bouwen — HTML, SCSS (ITCSS + BEM) en Vanilla JS.
-              </p>
+              <span class="projects__current-label"
+                >{projects.currentLabel}</span
+              >
+              <p class="projects__current-text">{projects.currentText}</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- === CONTACT === -->
-      <section class="contact" id="contact" aria-label="Contact">
+      <section class="contact" id="contact" aria-label="{contact.sectionAria}">
         <div class="o-container">
           <div class="contact__inner">
             <div>
-              <span class="contact__section-label">Laten we praten</span>
-              <h2 class="contact__tagline">
+              <span class="contact__section-label"
+                >{contact.sectionLabel}</span
+              >
+              <h2 class="contact__tagline" data-i18n-html="contact.tagline">
                 Interesse in samenwerken<br />of gewoon hallo zeggen?
               </h2>
             </div>
@@ -315,9 +400,9 @@
                 class="btn btn--linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Bekijk mijn LinkedIn profiel (opent in nieuw tabblad)"
+                aria-label="{contact.linkedinAria}"
               >
-                LinkedIn
+                {contact.linkedin}
               </a>
               <span class="contact__mail">karlsmit@live.nl</span>
             </div>
@@ -327,26 +412,13 @@
     </main>
 
     <!-- === FOOTER === -->
-    <footer
-      role="contentinfo"
-      style="
-        padding: 2rem 0;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #999;
-      "
-    >
+    <footer class="site-footer" role="contentinfo">
       <div class="o-container">
-        <p>
-          © <span id="year"></span> Karl Smit — Gebouwd met HTML, SCSS &amp;
-          Vanilla JS
-        </p>
+        <p>{footer.text}</p>
       </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="js/i18n.js" defer></script>
+    <script src="main.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,58 @@
+// =============================================================================
+// COMPONENTS: LANG-SWITCHER
+// Compact NL/EN flag toggle, slot in next to nav links
+// =============================================================================
+
+@use "../1-settings/variables" as *;
+@use "../2-tools/mixins" as *;
+
+.lang-switcher {
+  @include flex(row, flex-end, center, $space-1);
+  margin-left: auto;
+
+  @include respond-to(md) {
+    margin-left: $space-3;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    background: transparent;
+    border: 0;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    opacity: 0.45;
+    transition:
+      opacity $transition-base,
+      transform $transition-base;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
+
+    // Active language (set via aria-pressed by JS)
+    &[aria-pressed="true"] {
+      opacity: 1;
+
+      .lang-switcher__flag {
+        box-shadow: 0 0 0 2px $color-accent;
+      }
+    }
+  }
+
+  &__flag {
+    display: block;
+    width: 22px;
+    height: auto;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: box-shadow $transition-base;
+  }
+}

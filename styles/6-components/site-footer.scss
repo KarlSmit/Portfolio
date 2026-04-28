@@ -1,0 +1,13 @@
+// =============================================================================
+// COMPONENTS: SITE-FOOTER
+// Subtle footer at the bottom of the page
+// =============================================================================
+
+@use "../1-settings/variables" as *;
+
+.site-footer {
+  padding: $space-4 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: $color-muted;
+}

@@ -57,6 +57,16 @@ a {
   color: inherit;
 }
 
+:root {
+  --color-primary: #1a1a1a;
+  --color-accent: #ffc43c;
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --color-subtle: #f7f7f7;
+  --color-subtle-dark: #ededed;
+  --color-muted: #999999;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 1rem;
@@ -232,6 +242,53 @@ h6 {
   height: 2px;
   background-color: #1a1a1a;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.lang-switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .lang-switcher {
+    margin-left: 1.5rem;
+  }
+}
+.lang-switcher__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.lang-switcher__btn:hover, .lang-switcher__btn:focus-visible {
+  opacity: 1;
+}
+.lang-switcher__btn:focus-visible {
+  outline: 2px solid #ffc43c;
+  outline-offset: 3px;
+}
+.lang-switcher__btn[aria-pressed=true] {
+  opacity: 1;
+}
+.lang-switcher__btn[aria-pressed=true] .lang-switcher__flag {
+  box-shadow: 0 0 0 2px #ffc43c;
+}
+.lang-switcher__flag {
+  display: block;
+  width: 22px;
+  height: auto;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
 }
 
 .hero {
@@ -724,6 +781,13 @@ h6 {
   background-color: #1a1a1a;
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999999;
 }
 
 .u-visually-hidden {

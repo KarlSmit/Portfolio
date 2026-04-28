@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Karl Smit — Front-end Developer",
+    "description": "Portfolio van Karl Smit — Junior Front-end Developer",
+    "htmlLang": "nl"
+  },
+  "nav": {
+    "logoAria": "Terug naar boven",
+    "menuAria": "Hoofdnavigatie",
+    "toggleAria": "Menu openen",
+    "skills": "Skills",
+    "experience": "Ervaring",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "switcher": {
+    "groupAria": "Taal kiezen",
+    "nlAria": "Schakel over naar Nederlands",
+    "enAria": "Switch to English",
+    "nlLabel": "Nederlands",
+    "enLabel": "English"
+  },
+  "hero": {
+    "sectionAria": "Introductie",
+    "label": "Junior Front-end Developer",
+    "greeting": "Hoi, ik ben",
+    "name": "Karl Smit.",
+    "subtitle": "Ik bouw nette, toegankelijke interfaces met HTML, Razor en SCSS. Momenteel aan het groeien als developer en altijd op zoek naar nieuwe uitdagingen.",
+    "ctaPrimary": "Bekijk mijn werk",
+    "ctaSecondary": "Neem contact op",
+    "scrollHint": "scroll"
+  },
+  "skills": {
+    "sectionAria": "Skills en technieken",
+    "sectionLabel": "Mijn toolkit",
+    "title": "Skills & technieken",
+    "categoryMarkup": "Markup & templating",
+    "categoryStyling": "Styling",
+    "categoryTools": "Tools & workflow"
+  },
+  "experience": {
+    "sectionAria": "Werkervaring",
+    "sectionLabel": "Mijn pad",
+    "title": "Werkervaring",
+    "items": {
+      "chipsoftFulltime": {
+        "period": "feb. 2025 — heden",
+        "role": "Front-end Developer",
+        "company": "ChipSoft Nederland · Fulltime",
+        "description": "Na hier aan de slag te zijn geweest voor me afstudeer ComakerShip en als werkstudent, begin ik hier mijn fulltime carrière als Front-end Developer. Ik hoop veel nieuws te leren over mijn vak en ook vooral het bedrijfsleven, op weg naar een nieuw avontuur!"
+      },
+      "chipsoftLeerwerk": {
+        "period": "sep. 2024 — jan. 2025",
+        "role": "Front-end Developer",
+        "company": "ChipSoft Nederland · Leerwerktraject",
+        "description": "Na mijn afstudeer ComakerShip bij ChipSoft ben ik daar tijdelijk als werkstudent Front-end Developer aan de gang gegaan totdat ik mijn diploma voor Software Engineer had gehaald."
+      },
+      "chipsoftAfstudeer": {
+        "period": "apr. 2024 — aug. 2024",
+        "role": "Software Developer",
+        "company": "ChipSoft Nederland · Afstudeer Comakership",
+        "description": "Voor mijn afstudeer comaker mag ik als frontend developer aan de slag bij ChipSoft. ChipSoft staat al meer dan 30 jaar aan de top van de zorgautomatisering. Tegenwoordig zijn ze trotse marktleider als leverancier van zorg-ICT in Nederland. Met revolutionaire ICT bieden zij zorginstellingen een unieke totaaloplossing die alle denkbare werkprocessen binnen de zorginstelling ondersteunt.<br><br>ChipSoft heeft een app genaamd HiX dat wordt gebruikt in ziekenhuizen en andere zorginstellingen om verschillende aspecten van patiëntenzorg te ondersteunen. Zo ook voor het toedienen van medicatie. Het toedieningsregistratie scherm wordt gebruikt om de verpleegkundige te informeren over welke toedieningen een patiënt moet krijgen op vaste tijden. Hierbij is het in de huidige weergave minder duidelijk waar op de dag dit dient te gebeuren en daar zal ik op inspringen om hier een passende oplossing voor te bedenken en te realiseren."
+      },
+      "materialDistrict": {
+        "period": "jul. 2023 — apr. 2024",
+        "role": "Software Developer",
+        "company": "MaterialDistrict · Tijdelijk contract",
+        "description": "Front-end development voor MaterialDistrict aan een project genaamd SampleStore, een platform voor materiaalinnovatie. Werkte met HTML, CSS en PHP."
+      },
+      "happyHorizon": {
+        "period": "feb. 2023 — jul. 2023",
+        "role": "Software Developer",
+        "company": "Happy Horizon · Comakership",
+        "description": "Voor het 2e semester van mijn schooljaar 2022/2023 mag ik weer stage lopen als software engineer. Hiervoor ga ik als Front-end Developer aan de slag bij Material District in Naarden onder begeleiding van mijn collega's bij het software bedrijf Happy Horizon."
+      },
+      "doItBigContract": {
+        "period": "jul. 2022 — jan. 2023",
+        "role": "Software Developer",
+        "company": "Do IT Big · Tijdelijk contract",
+        "description": "Front-end development bij Do IT Big, een maatwerk software bedrijf in Utrecht. Werkte met HTML, CSS en TypeScript in Angular aan Foodeli."
+      },
+      "doItBigComaker": {
+        "period": "feb. 2022 — jun. 2022",
+        "role": "Software Developer",
+        "company": "Do IT Big · Comakership",
+        "description": "Bij dit bedrijf heb ik met twee medestudenten een Comakership doorlopen. We behandelden alle aspecten van een project: Analyse, Adviseren, Ontwerpen, Realiseren en Management & Control. Ons project betrof de ontwikkeling van Foodeli, een platform vergelijkbaar met Thuisbezorgd. Als team werkten we samen met onze internationale collega's aan alle delen van de applicatie, van inloggen tot het plaatsen van bestellingen en het personaliseren van accounts."
+      }
+    }
+  },
+  "projects": {
+    "sectionAria": "Projecten",
+    "placeholderAria": "Binnenkort",
+    "sectionLabel": "Wat ik bouw",
+    "title": "Projecten",
+    "portfolioLabel": "HTML · SCSS · JS",
+    "portfolioTitle": "Dit portfolio",
+    "portfolioDesc": "Gebouwd met HTML, SCSS (ITCSS + BEM) en Vanilla JS. Eerste persoonlijke project om mijn skills te laten zien.",
+    "comingSoon": "Coming soon",
+    "currentLabel": "Nu bezig met",
+    "currentText": "Dit portfolio bouwen — HTML, SCSS (ITCSS + BEM) en Vanilla JS."
+  },
+  "contact": {
+    "sectionAria": "Contact",
+    "sectionLabel": "Laten we praten",
+    "tagline": "Interesse in samenwerken<br>of gewoon hallo zeggen?",
+    "linkedin": "LinkedIn",
+    "linkedinAria": "Bekijk mijn LinkedIn profiel (opent in nieuw tabblad)"
+  },
+  "footer": {
+    "text": "© {year} Karl Smit — Gebouwd met HTML, SCSS & Vanilla JS"
+  }
+}
