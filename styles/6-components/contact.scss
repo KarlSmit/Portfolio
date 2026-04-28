@@ -24,7 +24,7 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: $color-accent;
+    color: var(--accent-foreground);
     margin-bottom: $space-1;
   }
 
@@ -33,7 +33,7 @@
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 800;
     line-height: 1.1;
-    color: $color-primary;
+    color: var(--neutral-foreground-strong);
     max-width: 500px;
   }
 
@@ -45,12 +45,15 @@
   &__mail {
     font-size: 1rem;
     font-weight: 500;
-    color: $color-text;
+    color: var(--neutral-foreground);
     letter-spacing: 0.01em;
   }
 }
 
 // --- Button styles (used in hero & contact) ---
+// Primary  = inverted surface (zwart in light, wit in dark) met inverted tekst
+// Outline  = transparant met strong border en strong tekst
+// LinkedIn = volle accent-knop met --accent-foreground-on-accent als tekst
 .btn {
   display: inline-flex;
   align-items: center;
@@ -63,6 +66,7 @@
   transition:
     background-color $transition-base,
     color $transition-base,
+    border-color $transition-base,
     transform $transition-base;
 
   &:focus-visible {
@@ -70,35 +74,35 @@
   }
 
   &--primary {
-    background-color: $color-primary;
-    color: #ffffff;
+    background-color: var(--neutral-background-inverted);
+    color: var(--neutral-foreground-inverted);
 
     &:hover {
-      background-color: $color-accent;
-      color: $color-primary;
+      background-color: var(--accent-background);
+      color: var(--accent-foreground-on-accent);
       transform: translateY(-2px);
     }
   }
 
   &--outline {
     background-color: transparent;
-    color: $color-primary;
-    border: 2px solid $color-primary;
+    color: var(--neutral-foreground-strong);
+    border: 2px solid var(--neutral-stroke-strong);
 
     &:hover {
-      background-color: $color-primary;
-      color: #ffffff;
+      background-color: var(--neutral-background-inverted);
+      color: var(--neutral-foreground-inverted);
       transform: translateY(-2px);
     }
   }
 
   &--linkedin {
-    background-color: $color-accent;
-    color: $color-primary;
+    background-color: var(--accent-background);
+    color: var(--accent-foreground-on-accent);
 
     &:hover {
-      background-color: $color-primary;
-      color: #ffffff;
+      background-color: var(--accent-background-hover);
+      color: var(--accent-foreground-on-accent);
       transform: translateY(-2px);
     }
   }

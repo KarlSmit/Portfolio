@@ -20,7 +20,7 @@
     right: -100px;
     width: clamp(300px, 45vw, 600px);
     aspect-ratio: 1;
-    background-color: $color-accent;
+    background-color: var(--accent-background);
     border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
     opacity: 0.9;
     z-index: $z-base;
@@ -34,7 +34,7 @@
     left: -80px;
     width: clamp(150px, 25vw, 300px);
     aspect-ratio: 1;
-    background-color: $color-primary;
+    background-color: var(--neutral-foreground-strong);
     border-radius: 40% 60% 30% 70% / 60% 40% 50% 50%;
     z-index: $z-base;
     animation: blob-morph 10s ease-in-out infinite reverse;
@@ -52,7 +52,7 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: $color-muted;
+    color: var(--neutral-foreground-subtle);
     margin-bottom: $space-2;
   }
 
@@ -62,18 +62,18 @@
     font-weight: 800;
     line-height: 1;
     letter-spacing: -0.03em;
-    color: $color-primary;
+    color: var(--neutral-foreground-strong);
     margin-bottom: $space-2;
 
     &-accent {
-      color: $color-accent;
+      color: var(--accent-foreground);
       display: block;
     }
   }
 
   &__subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
-    color: $color-text;
+    color: var(--neutral-foreground);
     max-width: 480px;
     margin-bottom: $space-5;
     line-height: 1.7;
@@ -91,7 +91,7 @@
     transform: translateX(-50%);
     @include flex(column, center, center, $space-1);
     font-size: 0.75rem;
-    color: $color-muted;
+    color: var(--neutral-foreground-subtle);
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
@@ -100,7 +100,7 @@
       display: block;
       width: 1px;
       height: 40px;
-      background-color: $color-accent;
+      background-color: var(--accent-stroke);
       animation: scroll-line 1.5s ease-in-out infinite;
     }
   }

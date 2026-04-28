@@ -49,7 +49,7 @@
   font-size: $size;
   font-weight: $weight;
   line-height: $line-height;
-  color: $color-primary;
+  color: var(--neutral-foreground-strong);
 }
 
 // --- Visually hidden (accessible) ---
@@ -74,6 +74,6 @@
 
 // --- Focus ring (accessibility) ---
 @mixin focus-ring {
-  outline: 2px solid $color-accent;
+  outline: 2px solid var(--accent-stroke);
   outline-offset: 3px;
 }

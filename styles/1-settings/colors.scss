@@ -1,0 +1,80 @@
+// =============================================================================
+// SETTINGS: COLORS
+// Semantisch color-token systeem:
+//    1. Twee categorieën (neutral + accent),
+//    2. Drie subcategorieën (background, foreground, stroke) en optionele states
+//    3. Als modifier achteraan (-hover, -disabled, -inverted, -subtle, -strong).
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// LIGHT (default)
+// -----------------------------------------------------------------------------
+:root,
+[data-theme="light"] {
+  // --- Neutral · background ---
+  --neutral-background: #ffffff;
+  --neutral-background-subtle: #f7f7f7;
+  --neutral-background-inverted: #1a1a1a;
+  --neutral-background-hover: #efefef;
+
+  // --- Neutral · foreground ---
+  --neutral-foreground: #333333;
+  --neutral-foreground-strong: #1a1a1a;
+  --neutral-foreground-subtle: #999999;
+  --neutral-foreground-inverted: #ffffff;
+  --neutral-foreground-disabled: #cccccc;
+
+  // --- Neutral · stroke ---
+  --neutral-stroke-subtle: #f0f0f0;
+  --neutral-stroke: #e5e5e5;
+  --neutral-stroke-strong: #1a1a1a;
+
+  // --- Accent · background ---
+  --accent-background: #ffc43c;
+  --accent-background-subtle: rgb(255 196 60 / 0.13);
+  --accent-background-hover: #ffb820;
+
+  // --- Accent · foreground ---
+  --accent-foreground: #ffc43c;
+  --accent-foreground-on-accent: #1a1a1a;
+
+  // --- Accent · stroke ---
+  --accent-stroke: #ffc43c;
+  --accent-stroke-subtle: rgb(255 196 60 / 0.4);
+}
+
+// -----------------------------------------------------------------------------
+// DARK
+// -----------------------------------------------------------------------------
+[data-theme="dark"] {
+  // --- Neutral · background ---
+  --neutral-background: #1a1a1a;
+  --neutral-background-subtle: #242424;
+  --neutral-background-inverted: #ffffff;
+  --neutral-background-hover: #2e2e2e;
+
+  // --- Neutral · foreground ---
+  --neutral-foreground: #e5e5e5;
+  --neutral-foreground-strong: #ffffff;
+  --neutral-foreground-subtle: #888888;
+  --neutral-foreground-inverted: #1a1a1a;
+  --neutral-foreground-disabled: #555555;
+
+  // --- Neutral · stroke ---
+  --neutral-stroke-subtle: #2a2a2a;
+  --neutral-stroke: #333333;
+  --neutral-stroke-strong: #ffffff;
+
+  // --- Accent · background ---
+  --accent-background: #ffd676;
+  --accent-background-subtle: rgb(255 214 118 / 0.18);
+  --accent-background-hover: #ffc43c;
+
+  // --- Accent · foreground ---
+  --accent-foreground: #ffd676;
+  --accent-foreground-on-accent: #1a1a1a;
+
+  // --- Accent · stroke ---
+  --accent-stroke: #ffd676;
+  --accent-stroke-subtle: rgb(255 214 118 / 0.4);
+}

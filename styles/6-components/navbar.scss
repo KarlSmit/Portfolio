@@ -13,15 +13,16 @@
   left: 0;
   right: 0;
   z-index: $z-navbar;
-  background-color: $color-bg;
+  background-color: var(--neutral-background);
   border-bottom: 2px solid transparent;
   transition:
+    background-color $transition-base,
     border-color $transition-base,
     box-shadow $transition-base;
 
   // JS adds this class on scroll
   &--scrolled {
-    border-color: $color-accent;
+    border-color: var(--accent-stroke);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
   }
 
@@ -34,15 +35,15 @@
     font-family: $font-display;
     font-size: 1.25rem;
     font-weight: 800;
-    color: $color-primary;
+    color: var(--neutral-foreground-strong);
     letter-spacing: -0.02em;
 
     span {
-      color: $color-accent;
+      color: var(--accent-foreground);
     }
 
     &:hover {
-      color: $color-primary;
+      color: var(--neutral-foreground-strong);
     }
   }
 
@@ -58,7 +59,7 @@
     font-family: $font-body;
     font-size: 0.9rem;
     font-weight: 500;
-    color: $color-text;
+    color: var(--neutral-foreground);
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
     transition:
@@ -67,8 +68,8 @@
 
     &:hover,
     &--active {
-      color: $color-primary;
-      border-color: $color-accent;
+      color: var(--neutral-foreground-strong);
+      border-color: var(--accent-stroke);
     }
   }
 
@@ -87,7 +88,7 @@
       display: block;
       width: 24px;
       height: 2px;
-      background-color: $color-primary;
+      background-color: var(--neutral-foreground-strong);
       transition:
         transform $transition-base,
         opacity $transition-base;

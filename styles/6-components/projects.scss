@@ -7,7 +7,7 @@
 @use "../2-tools/mixins" as *;
 
 .projects {
-  background-color: $color-subtle;
+  background-color: var(--neutral-background-subtle);
 
   &__header {
     margin-bottom: $space-6;
@@ -19,7 +19,7 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: $color-accent;
+    color: var(--accent-foreground);
     margin-bottom: $space-1;
   }
 
@@ -40,17 +40,17 @@
 
   // --- Project card ---
   &__card {
-    background-color: $color-bg;
+    background-color: var(--neutral-background);
     border-radius: $radius-lg;
     padding: $space-4;
-    border: 1.5px solid $color-subtle-dark;
+    border: 1.5px solid var(--neutral-stroke);
     transition:
       transform $transition-base,
       border-color $transition-base;
 
     &:hover {
       transform: translateY(-4px);
-      border-color: $color-accent;
+      border-color: var(--accent-stroke);
     }
 
     &--placeholder {
@@ -61,7 +61,7 @@
 
       &:hover {
         transform: none;
-        border-color: $color-accent;
+        border-color: var(--accent-stroke);
         opacity: 0.9;
       }
     }
@@ -72,7 +72,7 @@
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: $color-muted;
+    color: var(--neutral-foreground-subtle);
     margin-bottom: $space-1;
   }
 
@@ -83,20 +83,20 @@
 
   &__card-desc {
     font-size: 0.9rem;
-    color: $color-text;
+    color: var(--neutral-foreground);
     line-height: 1.6;
   }
 
   &__coming-soon {
     font-size: 0.85rem;
     font-weight: 600;
-    color: $color-muted;
+    color: var(--neutral-foreground-subtle);
     letter-spacing: 0.06em;
   }
 
   // --- Now working on ---
   &__current {
-    background-color: $color-primary;
+    background-color: var(--neutral-background-inverted);
     border-radius: $radius-lg;
     padding: $space-4 $space-5;
     @include flex(row, flex-start, center, $space-4);
@@ -106,7 +106,7 @@
   &__current-dot {
     width: 10px;
     height: 10px;
-    background-color: $color-accent;
+    background-color: var(--accent-background);
     border-radius: 50%;
     flex-shrink: 0;
     animation: pulse 2s ease-in-out infinite;
@@ -117,7 +117,7 @@
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: $color-accent;
+    color: var(--accent-foreground);
     display: block;
     margin-bottom: 0.25rem;
   }
@@ -125,7 +125,7 @@
   &__current-text {
     font-size: 1rem;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--neutral-foreground-inverted);
   }
 }
 

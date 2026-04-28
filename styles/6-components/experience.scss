@@ -17,7 +17,7 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: $color-accent;
+    color: var(--accent-foreground);
     margin-bottom: $space-1;
   }
 
@@ -39,8 +39,8 @@
       width: 2px;
       background: linear-gradient(
         to bottom,
-        $color-accent,
-        rgba($color-accent, 0)
+        var(--accent-stroke),
+        transparent
       );
     }
   }
@@ -61,10 +61,10 @@
       top: 8px;
       width: 12px;
       height: 12px;
-      background-color: $color-accent;
+      background-color: var(--accent-background);
       border-radius: 50%;
-      border: 2px solid $color-bg;
-      box-shadow: 0 0 0 2px $color-accent;
+      border: 2px solid var(--neutral-background);
+      box-shadow: 0 0 0 2px var(--accent-stroke);
 
       @include respond-to(md) {
         left: calc(-#{$space-6} - 5px);
@@ -75,7 +75,7 @@
   &__period {
     font-size: 0.8rem;
     font-weight: 600;
-    color: $color-muted;
+    color: var(--neutral-foreground-subtle);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: $space-1;
@@ -85,20 +85,20 @@
     font-family: $font-display;
     font-size: 1.2rem;
     font-weight: 700;
-    color: $color-primary;
+    color: var(--neutral-foreground-strong);
     margin-bottom: 0.25rem;
   }
 
   &__company {
     font-size: 0.9rem;
     font-weight: 500;
-    color: $color-accent;
+    color: var(--accent-foreground);
     margin-bottom: $space-2;
   }
 
   &__description {
     font-size: 0.95rem;
-    color: $color-text;
+    color: var(--neutral-foreground);
     line-height: 1.7;
     max-width: 580px;
   }

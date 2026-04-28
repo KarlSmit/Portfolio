@@ -10,16 +10,19 @@ body {
   font-family: $font-body;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $color-text;
-  background-color: $color-bg;
+  color: var(--neutral-foreground);
+  background-color: var(--neutral-background);
+  transition:
+    color $transition-base,
+    background-color $transition-base;
 }
 
 a {
-  color: $color-primary;
+  color: var(--neutral-foreground-strong);
   transition: color $transition-base;
 
   &:hover {
-    color: $color-accent;
+    color: var(--accent-foreground);
   }
 
   &:focus-visible {

@@ -6,6 +6,26 @@
     <meta name="description" content="{meta.description}" />
     <title>{meta.title}</title>
 
+    <!--
+      Theme bootstrap — moet vóór de stylesheet staan zodat de eerste render
+      al de juiste data-theme heeft (geen flash of unstyled theme).
+      Volgorde: localStorage > prefers-color-scheme > light.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          var theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+
     <!-- Google Fonts: Syne (display) + DM Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -139,9 +159,9 @@
 
             <div class="hero__actions">
               <a href="#projects" class="btn btn--primary">{hero.ctaPrimary}</a>
-              <a href="#contact" class="btn btn--outline"
-                >{hero.ctaSecondary}</a
-              >
+              <a href="#contact" class="btn btn--outline">
+                {hero.ctaSecondary}
+              </a>
             </div>
           </div>
         </div>

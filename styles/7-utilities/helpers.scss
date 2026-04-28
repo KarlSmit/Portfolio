@@ -11,11 +11,11 @@
 }
 
 .u-text-accent {
-  color: $color-accent;
+  color: var(--accent-foreground);
 }
 
 .u-text-muted {
-  color: $color-muted;
+  color: var(--neutral-foreground-subtle);
 }
 
 .u-text-center {
