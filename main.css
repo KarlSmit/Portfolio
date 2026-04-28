@@ -280,6 +280,50 @@ h6 {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--neutral-foreground);
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible {
+  color: var(--neutral-foreground-strong);
+  background-color: var(--neutral-background-hover);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent-stroke);
+  outline-offset: 3px;
+}
+.theme-toggle:active {
+  transform: scale(0.92);
+}
+.theme-toggle__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme=dark] .theme-toggle__icon--sun {
+  display: none;
+}
+[data-theme=dark] .theme-toggle__icon--moon {
+  display: block;
+}
+
 .lang-switcher {
   display: flex;
   flex-direction: row;
@@ -448,6 +492,7 @@ h6 {
 }
 .skills {
   background-color: var(--neutral-background-subtle);
+  transition: background-color 0.25s ease;
 }
 .skills__header {
   margin-bottom: 4rem;
@@ -481,6 +526,7 @@ h6 {
   border-radius: 16px;
   padding: 2rem;
   border-top: 3px solid var(--accent-stroke);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 .skills__category-title {
   font-family: "Syne", sans-serif;
@@ -601,6 +647,7 @@ h6 {
 
 .projects {
   background-color: var(--neutral-background-subtle);
+  transition: background-color 0.25s ease;
 }
 .projects__header {
   margin-bottom: 4rem;
@@ -635,7 +682,7 @@ h6 {
   border-radius: 16px;
   padding: 2rem;
   border: 1.5px solid var(--neutral-stroke);
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 .projects__card:hover {
   transform: translateY(-4px);
@@ -692,6 +739,7 @@ h6 {
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  transition: background-color 0.25s ease;
 }
 .projects__current-dot {
   width: 10px;

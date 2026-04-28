@@ -21,6 +21,9 @@
     "nlLabel": "Nederlands",
     "enLabel": "English"
   },
+  "theme": {
+    "toggleAria": "Toggle between light and dark theme"
+  },
   "hero": {
     "sectionAria": "Introduction",
     "label": "Front-end Developer",

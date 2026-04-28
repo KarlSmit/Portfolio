@@ -21,6 +21,9 @@
     "nlLabel": "Nederlands",
     "enLabel": "English"
   },
+  "theme": {
+    "toggleAria": "Thema wisselen tussen licht en donker"
+  },
   "hero": {
     "sectionAria": "Introductie",
     "label": "Front-end Developer",

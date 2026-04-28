@@ -8,6 +8,7 @@
 
 .projects {
   background-color: var(--neutral-background-subtle);
+  transition: background-color $transition-base;
 
   &__header {
     margin-bottom: $space-6;
@@ -45,6 +46,7 @@
     padding: $space-4;
     border: 1.5px solid var(--neutral-stroke);
     transition:
+      background-color $transition-base,
       transform $transition-base,
       border-color $transition-base;
 
@@ -101,6 +103,7 @@
     padding: $space-4 $space-5;
     @include flex(row, flex-start, center, $space-4);
     flex-wrap: wrap;
+    transition: background-color $transition-base;
   }
 
   &__current-dot {

@@ -8,6 +8,7 @@
 
 .skills {
   background-color: var(--neutral-background-subtle);
+  transition: background-color $transition-base;
 
   &__header {
     margin-bottom: $space-6;
@@ -42,6 +43,9 @@
     border-radius: $radius-lg;
     padding: $space-4;
     border-top: 3px solid var(--accent-stroke);
+    transition:
+      background-color $transition-base,
+      border-color $transition-base;
   }
 
   &__category-title {
