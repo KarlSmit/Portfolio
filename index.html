@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- Compiled CSS (compile main.scss → main.css via Live Sass Compiler in VS Code) -->
     <link rel="stylesheet" href="main.css" />
@@ -41,21 +40,18 @@
           <div
             class="lang-switcher"
             role="group"
-            aria-label="{switcher.groupAria}"
-          >
+            aria-label="{switcher.groupAria}">
             <button
               type="button"
               class="lang-switcher__btn"
               data-lang="nl"
               aria-label="{switcher.nlAria}"
-              aria-pressed="false"
-            >
+              aria-pressed="false">
               <svg
                 class="lang-switcher__flag"
                 viewBox="0 0 9 6"
                 aria-hidden="true"
-                focusable="false"
-              >
+                focusable="false">
                 <rect width="9" height="2" y="0" fill="#AE1C28" />
                 <rect width="9" height="2" y="2" fill="#FFFFFF" />
                 <rect width="9" height="2" y="4" fill="#21468B" />
@@ -68,45 +64,38 @@
               class="lang-switcher__btn"
               data-lang="en"
               aria-label="{switcher.enAria}"
-              aria-pressed="false"
-            >
+              aria-pressed="false">
               <svg
                 class="lang-switcher__flag"
                 viewBox="0 0 60 30"
                 aria-hidden="true"
-                focusable="false"
-              >
+                focusable="false">
                 <clipPath id="lang-uk-clip">
                   <path d="M0,0 v30 h60 v-30 z" />
                 </clipPath>
                 <clipPath id="lang-uk-clip-2">
                   <path
-                    d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"
-                  />
+                    d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
                 </clipPath>
                 <g clip-path="url(#lang-uk-clip)">
                   <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
                   <path
                     d="M0,0 L60,30 M60,0 L0,30"
                     stroke="#FFFFFF"
-                    stroke-width="6"
-                  />
+                    stroke-width="6" />
                   <path
                     d="M0,0 L60,30 M60,0 L0,30"
                     clip-path="url(#lang-uk-clip-2)"
                     stroke="#C8102E"
-                    stroke-width="4"
-                  />
+                    stroke-width="4" />
                   <path
                     d="M30,0 v30 M0,15 h60"
                     stroke="#FFFFFF"
-                    stroke-width="10"
-                  />
+                    stroke-width="10" />
                   <path
                     d="M30,0 v30 M0,15 h60"
                     stroke="#C8102E"
-                    stroke-width="6"
-                  />
+                    stroke-width="6" />
                 </g>
               </svg>
               <span class="u-visually-hidden">{switcher.enLabel}</span>
@@ -117,8 +106,7 @@
           <button
             class="navbar__toggle"
             aria-label="{nav.toggleAria}"
-            aria-expanded="false"
-          >
+            aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -146,9 +134,7 @@
             <p class="hero__subtitle">{hero.subtitle}</p>
 
             <div class="hero__actions">
-              <a href="#projects" class="btn btn--primary"
-                >{hero.ctaPrimary}</a
-              >
+              <a href="#projects" class="btn btn--primary">{hero.ctaPrimary}</a>
               <a href="#contact" class="btn btn--outline"
                 >{hero.ctaSecondary}</a
               >
@@ -207,8 +193,7 @@
       <section
         class="experience"
         id="experience"
-        aria-label="{experience.sectionAria}"
-      >
+        aria-label="{experience.sectionAria}">
         <div class="o-container">
           <header class="experience__header">
             <span class="experience__section-label"
@@ -260,8 +245,7 @@
               </span>
               <p
                 class="experience__description"
-                data-i18n-html="experience.items.chipsoftAfstudeer.description"
-              >
+                data-i18n-html="experience.items.chipsoftAfstudeer.description">
                 Voor mijn afstudeer comaker mag ik als frontend developer aan de
                 slag bij ChipSoft.
               </p>
@@ -334,20 +318,19 @@
       <section
         class="projects"
         id="projects"
-        aria-label="{projects.sectionAria}"
-      >
+        aria-label="{projects.sectionAria}">
         <div class="o-container">
           <header class="projects__header">
-            <span class="projects__section-label"
-              >{projects.sectionLabel}</span
-            >
+            <span class="projects__section-label">{projects.sectionLabel}</span>
             <h2>{projects.title}</h2>
           </header>
 
           <div class="projects__grid">
             <!-- Echt project: dit portfolio zelf -->
             <article class="projects__card">
-              <span class="projects__card-label">{projects.portfolioLabel}</span>
+              <span class="projects__card-label"
+                >{projects.portfolioLabel}</span
+              >
               <h3 class="projects__card-title">{projects.portfolioTitle}</h3>
               <p class="projects__card-desc">{projects.portfolioDesc}</p>
             </article>
@@ -355,15 +338,13 @@
             <!-- = Coming soon placeholders = -->
             <article
               class="projects__card projects__card--placeholder"
-              aria-label="{projects.placeholderAria}"
-            >
+              aria-label="{projects.placeholderAria}">
               <span class="projects__coming-soon">{projects.comingSoon}</span>
             </article>
 
             <article
               class="projects__card projects__card--placeholder"
-              aria-label="{projects.placeholderAria}"
-            >
+              aria-label="{projects.placeholderAria}">
               <span class="projects__coming-soon">{projects.comingSoon}</span>
             </article>
           </div>
@@ -386,9 +367,7 @@
         <div class="o-container">
           <div class="contact__inner">
             <div>
-              <span class="contact__section-label"
-                >{contact.sectionLabel}</span
-              >
+              <span class="contact__section-label">{contact.sectionLabel}</span>
               <h2 class="contact__tagline" data-i18n-html="contact.tagline">
                 Interesse in samenwerken<br />of gewoon hallo zeggen?
               </h2>
@@ -400,8 +379,7 @@
                 class="btn btn--linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="{contact.linkedinAria}"
-              >
+                aria-label="{contact.linkedinAria}">
                 {contact.linkedin}
               </a>
               <span class="contact__mail">karlsmit@live.nl</span>
