@@ -7,36 +7,23 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
   // ---------------------------------------------------------------------------
-  // Language switcher
+  // Language switcher — single toggle button, CSS handles flag visibility
   // ---------------------------------------------------------------------------
-  const switcherButtons = document.querySelectorAll('.lang-switcher__btn');
+  const langToggle = document.querySelector('[data-lang-toggle]');
 
   // ---------------------------------------------------------------------------
   // i18n initialisatie (laadt JSON, vult [data-i18n*] elementen, zet <html lang>)
   // ---------------------------------------------------------------------------
   if (window.i18n) {
     await window.i18n.init();
-    syncSwitcherActiveState(window.i18n.getLanguage());
   }
 
-  switcherButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const lang = btn.getAttribute('data-lang');
-      if (lang && window.i18n) {
-        window.i18n.setLanguage(lang);
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      if (window.i18n) {
+        const next = window.i18n.getLanguage() === 'nl' ? 'en' : 'nl';
+        window.i18n.setLanguage(next);
       }
-    });
-  });
-
-  // Update aria-pressed wanneer de taal verandert
-  document.addEventListener('languagechanged', (event) => {
-    syncSwitcherActiveState(event.detail.language);
-  });
-
-  function syncSwitcherActiveState(activeLang) {
-    switcherButtons.forEach((btn) => {
-      const isActive = btn.getAttribute('data-lang') === activeLang;
-      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
   }
 

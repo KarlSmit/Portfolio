@@ -1,54 +1,58 @@
 // =============================================================================
 // COMPONENTS: LANG-SWITCHER
-// Compact NL/EN flag toggle, slot in next to nav links
+// Single toggle button — shows language flag where you can switch to, hides the other.
 // =============================================================================
 
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
 .lang-switcher {
-  @include flex(row, flex-end, center, $space-1);
-  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  background: transparent;
+  border: 0;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition:
+    opacity $transition-base,
+    transform $transition-base;
 
-  @include respond-to(md) {
-    margin-left: $space-3;
+  &:hover,
+  &:focus-visible {
+    opacity: 0.75;
   }
 
-  &__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem;
-    background: transparent;
-    border: 0;
-    border-radius: $radius-sm;
-    cursor: pointer;
-    opacity: 0.45;
-    transition:
-      opacity $transition-base,
-      transform $transition-base;
+  &:focus-visible {
+    @include focus-ring;
+  }
 
-    &:hover,
-    &:focus-visible {
-      opacity: 1;
-    }
-
-    &:focus-visible {
-      @include focus-ring;
-    }
-
-    // Active language (set via aria-pressed by JS)
-    &[aria-pressed="true"] {
-      opacity: 1;
-    }
+  &:active {
+    transform: scale(0.92);
   }
 
   &__flag {
     display: block;
-    width: 22px;
-    height: auto;
+    width: auto;
+    height: 15px;
     border-radius: 2px;
     overflow: hidden;
-    transition: box-shadow $transition-base;
+
+    // Default (nl): EN flag visible (klik → en), NL flag hidden.
+    &--nl {
+      display: none;
+    }
+  }
+}
+
+// When language is EN: show NL flag (klik → nl).
+[data-lang="en"] .lang-switcher__flag {
+  &--nl {
+    display: block;
+  }
+
+  &--en {
+    display: none;
   }
 }

@@ -56,7 +56,7 @@ De placeholder `{year}` wordt automatisch vervangen door het huidige jaartal.
 ## Roadmap
 
 - [x] i18n / NL-EN taalswitcher
-- [ ] Dark mode toggle (CSS custom properties zijn al voorbereid in
+- [x] Dark mode toggle (CSS custom properties zijn al voorbereid in
       `styles/3-generic/themes.scss`)
 - [ ] Mobile menu functionaliteit
 - [ ] Scroll-reveal animaties

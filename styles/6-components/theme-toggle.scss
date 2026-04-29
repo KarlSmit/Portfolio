@@ -13,7 +13,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  // Iets ruimer dan lang-switcher__btn zodat de icoontjes lekker tikbaar zijn.
   padding: 0.35rem;
   background: transparent;
   border: 0;
@@ -54,21 +53,19 @@
     stroke-linecap: round;
     stroke-linejoin: round;
 
-    // Default (light): zon zichtbaar, maan verborgen.
-    &--moon {
+    // Default (light): maan zichtbaar (klik → dark), zon verborgen.
+    &--sun {
       display: none;
     }
   }
 }
 
 // -- Dark theme: flip iconen ---------------------------------------------------
-// We schakelen op het [data-theme="dark"] attribuut van <html>, zodat de juiste
-// staat al klopt bij de eerste render (zie de inline bootstrap in index.html).
 [data-theme="dark"] .theme-toggle__icon {
   &--sun {
-    display: none;
+    display: block;
   }
   &--moon {
-    display: block;
+    display: none;
   }
 }

@@ -208,6 +208,8 @@
       return;
     }
 
+    document.documentElement.setAttribute('data-lang', code);
+
     try {
       const bundle = await loadBundle(code);
       current = code;

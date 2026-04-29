@@ -60,50 +60,48 @@
             <a href="#contact" class="navbar__link">{nav.contact}</a>
           </nav>
 
-          <!-- = Theme toggle = -->
-          <button
-            type="button"
-            class="theme-toggle"
-            data-theme-toggle
-            aria-label="{theme.toggleAria}"
-            aria-pressed="false">
-            <svg
-              class="theme-toggle__icon theme-toggle__icon--sun"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false">
-              <circle cx="12" cy="12" r="4" />
-              <path d="M12 2v2" />
-              <path d="M12 20v2" />
-              <path d="m4.93 4.93 1.41 1.41" />
-              <path d="m17.66 17.66 1.41 1.41" />
-              <path d="M2 12h2" />
-              <path d="M20 12h2" />
-              <path d="m6.34 17.66-1.41 1.41" />
-              <path d="m19.07 4.93-1.41 1.41" />
-            </svg>
-            <svg
-              class="theme-toggle__icon theme-toggle__icon--moon"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-          </button>
+          <!-- = Settings = -->
+          <div class="navbar__nav">
 
-          <!-- = Language switcher = -->
-          <div
-            class="lang-switcher"
-            role="group"
-            aria-label="{switcher.groupAria}">
+            <!-- = Theme toggle = -->
             <button
               type="button"
-              class="lang-switcher__btn"
-              data-lang="nl"
-              aria-label="{switcher.nlAria}"
+              class="theme-toggle"
+              data-theme-toggle
+              aria-label="{theme.toggleAria}"
               aria-pressed="false">
               <svg
-                class="lang-switcher__flag"
+                class="theme-toggle__icon theme-toggle__icon--sun"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg>
+              <svg
+                class="theme-toggle__icon theme-toggle__icon--moon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+
+            <!-- = Language switcher = -->
+            <button
+              type="button"
+              class="lang-switcher"
+              data-lang-toggle
+              aria-label="{switcher.groupAria}">
+              <svg
+                class="lang-switcher__flag lang-switcher__flag--nl"
                 viewBox="0 0 9 6"
                 aria-hidden="true"
                 focusable="false">
@@ -111,17 +109,8 @@
                 <rect width="9" height="2" y="2" fill="#FFFFFF" />
                 <rect width="9" height="2" y="4" fill="#21468B" />
               </svg>
-              <span class="u-visually-hidden">{switcher.nlLabel}</span>
-            </button>
-
-            <button
-              type="button"
-              class="lang-switcher__btn"
-              data-lang="en"
-              aria-label="{switcher.enAria}"
-              aria-pressed="false">
               <svg
-                class="lang-switcher__flag"
+                class="lang-switcher__flag lang-switcher__flag--en"
                 viewBox="0 0 60 30"
                 aria-hidden="true"
                 focusable="false">
@@ -153,8 +142,8 @@
                     stroke-width="6" />
                 </g>
               </svg>
-              <span class="u-visually-hidden">{switcher.enLabel}</span>
             </button>
+
           </div>
 
           <!-- = Mobile toggle (expandable functionality) = -->
