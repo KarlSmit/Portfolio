@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Persoonlijk portfolio van Karl Smit — statische site, Sass build via npm, deploy via GitHub Pages.",
+  "private": true,
+  "scripts": {
+    "build": "sass main.scss:main.css --style=compressed --no-source-map",
+    "watch": "sass main.scss:main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KarlSmit/Portfolio.git"
+  },
+  "author": "Karl Smit",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}

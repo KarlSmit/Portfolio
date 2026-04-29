@@ -1,7 +1,9 @@
 # Portfolio
 
+**Live:** https://karlsmit.github.io/Portfolio/
+
 Persoonlijk portfolio van Karl Smit — gebouwd met HTML, SCSS (ITCSS + BEM) en
-vanilla JS.
+vanilla JS. Statisch gehost op GitHub Pages.
 
 ## Structuur
 
@@ -34,9 +36,35 @@ De site draait dan op `http://127.0.0.1:5500/`.
 
 ## SCSS compileren
 
-Dit project gebruikt de **Live Sass Compiler** VS Code extensie. Opent
-automatisch `main.scss` (zie `.vscode/settings.json`) en schrijft naar
-`main.css`. Klik op **Watch Sass** om de watcher te starten.
+Twee opties — beide schrijven naar `main.css` in de root:
+
+**Optie A — npm (canoniek, ook voor deploy):**
+
+```bash
+npm install        # eenmalig
+npm run watch      # tijdens development
+npm run build      # voor de commit (compressed, geen sourcemap)
+```
+
+**Optie B — Live Sass Compiler (VS Code extensie):**
+Opent automatisch `main.scss` via `.vscode/settings.json`. Klik op
+**Watch Sass** om de watcher te starten. Handig voor snelle visuele
+iteratie, maar draai voor de commit altijd `npm run build` zodat de
+output consistent compressed is.
+
+## Deploy
+
+GitHub Pages serveert vanaf `main` / root. Workflow:
+
+```bash
+npm run build                               # main.css opnieuw genereren
+git add .
+git commit -m "..."
+git push origin main                        # live binnen ~1 minuut
+```
+
+`main.css` wordt mee-gecommit (Pages bouwt geen Sass server-side).
+`node_modules/` staat in `.gitignore`.
 
 ## Vertalingen toevoegen of wijzigen
 
@@ -59,5 +87,6 @@ De placeholder `{year}` wordt automatisch vervangen door het huidige jaartal.
 - [x] Dark mode toggle (CSS custom properties zijn al voorbereid in
       `styles/3-generic/themes.scss`)
 - [x] Mobile menu functionaliteit
-- [ ] Online zetten van de website
+- [x] Online zetten van de website
 - [ ] Scroll-reveal animaties
+- [ ] Custom domein koppelen
