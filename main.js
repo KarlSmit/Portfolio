@@ -31,6 +31,33 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Navbar: --scrolled modifier zodra je voorbij de top scrollt
   // ---------------------------------------------------------------------------
   const navbar = document.querySelector('.navbar');
+  const navbarToggle = document.querySelector('.navbar__toggle');
+
+  // ---------------------------------------------------------------------------
+  // Mobile nav toggle
+  // ---------------------------------------------------------------------------
+  if (navbarToggle && navbar) {
+    navbarToggle.addEventListener('click', () => {
+      const isOpen = navbar.classList.toggle('navbar--open');
+      navbarToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Sluit menu bij klik op een nav-link
+    document.querySelectorAll('.navbar__link').forEach((link) => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('navbar--open');
+        navbarToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Sluit menu bij klik buiten de navbar
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target)) {
+        navbar.classList.remove('navbar--open');
+        navbarToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   if (navbar) {
     const handleScroll = () => {

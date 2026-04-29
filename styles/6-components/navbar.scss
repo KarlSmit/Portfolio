@@ -3,7 +3,6 @@
 // Sticky navigation bar — logo left, anchor links right
 // =============================================================================
 
-
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
@@ -92,6 +91,58 @@
       transition:
         transform $transition-base,
         opacity $transition-base;
+    }
+  }
+
+  // Mobile nav open state
+  @media (max-width: #{$bp-md - 1px}) {
+    &--open {
+      .navbar__inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: $space-3;
+      }
+
+      .navbar__toggle {
+        padding: 20px 0px;
+      }
+
+      .navbar_settings {
+        justify-content: end;
+      }
+
+      .navbar__nav {
+        display: flex;
+        width: 100%;
+        order: 1;
+        padding-top: $space-3;
+        gap: $space-2;
+        border-top: 1px solid var(--accent-stroke);
+      }
+
+      nav.navbar__nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      div.navbar__nav {
+        border-top: none;
+        padding-top: $space-1;
+      }
+
+      .navbar__toggle {
+        span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+
+        span:nth-child(2) {
+          opacity: 0;
+        }
+
+        span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
     }
   }
 }

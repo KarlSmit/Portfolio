@@ -58,6 +58,6 @@ De placeholder `{year}` wordt automatisch vervangen door het huidige jaartal.
 - [x] i18n / NL-EN taalswitcher
 - [x] Dark mode toggle (CSS custom properties zijn al voorbereid in
       `styles/3-generic/themes.scss`)
-- [ ] Mobile menu functionaliteit
+- [x] Mobile menu functionaliteit
+- [ ] Online zetten van de website
 - [ ] Scroll-reveal animaties
-- [ ] Project-detailpagina's
