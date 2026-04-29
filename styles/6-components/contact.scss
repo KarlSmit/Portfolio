@@ -3,7 +3,6 @@
 // Contact sectie — LinkedIn link + mailadres als tekst
 // =============================================================================
 
-
 @use "../1-settings/variables" as *;
 @use "../2-tools/mixins" as *;
 
@@ -47,63 +46,5 @@
     font-weight: 500;
     color: var(--neutral-foreground);
     letter-spacing: 0.01em;
-  }
-}
-
-// --- Button styles (used in hero & contact) ---
-// Primary  = inverted surface (zwart in light, wit in dark) met inverted tekst
-// Outline  = transparant met strong border en strong tekst
-// LinkedIn = volle accent-knop met --accent-foreground-on-accent als tekst
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: $space-1;
-  font-family: $font-body;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: $radius-full;
-  transition:
-    background-color $transition-base,
-    color $transition-base,
-    border-color $transition-base,
-    transform $transition-base;
-
-  &:focus-visible {
-    @include focus-ring;
-  }
-
-  &--primary {
-    background-color: var(--neutral-background-inverted);
-    color: var(--neutral-foreground-inverted);
-
-    &:hover {
-      background-color: var(--accent-background);
-      color: var(--accent-foreground-on-accent);
-      transform: translateY(-2px);
-    }
-  }
-
-  &--outline {
-    background-color: transparent;
-    color: var(--neutral-foreground-strong);
-    border: 2px solid var(--neutral-stroke-strong);
-
-    &:hover {
-      background-color: var(--neutral-background-inverted);
-      color: var(--neutral-foreground-inverted);
-      transform: translateY(-2px);
-    }
-  }
-
-  &--linkedin {
-    background-color: var(--accent-background);
-    color: var(--accent-foreground-on-accent);
-
-    &:hover {
-      background-color: var(--accent-background-hover);
-      color: var(--accent-foreground-on-accent);
-      transform: translateY(-2px);
-    }
   }
 }
