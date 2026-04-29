@@ -88,6 +88,9 @@ De placeholder `{year}` wordt automatisch vervangen door het huidige jaartal.
       `styles/3-generic/themes.scss`)
 - [x] Mobile menu functionaliteit
 - [x] Online zetten van de website
+- [ ] Adding content
+- [ ] Cleanup scss code and look for improving the quality
+- [ ] Contrast check and other accesibillity checks if necessary with the WCAG 2.2 rules
 - [ ] Scroll-reveal animaties
 - [ ] SSH key maken en koppelen
 - [ ] Custom domein koppelen
