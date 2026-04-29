@@ -89,4 +89,5 @@ De placeholder `{year}` wordt automatisch vervangen door het huidige jaartal.
 - [x] Mobile menu functionaliteit
 - [x] Online zetten van de website
 - [ ] Scroll-reveal animaties
+- [ ] SSH key maken en koppelen
 - [ ] Custom domein koppelen
