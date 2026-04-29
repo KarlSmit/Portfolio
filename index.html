@@ -62,7 +62,6 @@
 
           <!-- = Settings = -->
           <div class="navbar__nav">
-
             <!-- = Theme toggle = -->
             <button
               type="button"
@@ -75,22 +74,14 @@
                 viewBox="0 0 24 24"
                 aria-hidden="true"
                 focusable="false">
-                <circle cx="12" cy="12" r="4" />
-                <path d="M12 2v2" />
-                <path d="M12 20v2" />
-                <path d="m4.93 4.93 1.41 1.41" />
-                <path d="m17.66 17.66 1.41 1.41" />
-                <path d="M2 12h2" />
-                <path d="M20 12h2" />
-                <path d="m6.34 17.66-1.41 1.41" />
-                <path d="m19.07 4.93-1.41 1.41" />
+                <use href="svg/icon-sun.svg#icon-sun" />
               </svg>
               <svg
                 class="theme-toggle__icon theme-toggle__icon--moon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
                 focusable="false">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                <use href="svg/icon-moon.svg#icon-moon" />
               </svg>
             </button>
 
@@ -100,50 +91,17 @@
               class="lang-switcher"
               data-lang-toggle
               aria-label="{switcher.groupAria}">
-              <svg
+              <img
                 class="lang-switcher__flag lang-switcher__flag--nl"
-                viewBox="0 0 9 6"
-                aria-hidden="true"
-                focusable="false">
-                <rect width="9" height="2" y="0" fill="#AE1C28" />
-                <rect width="9" height="2" y="2" fill="#FFFFFF" />
-                <rect width="9" height="2" y="4" fill="#21468B" />
-              </svg>
-              <svg
+                src="svg/flag-nl.svg"
+                alt=""
+                aria-hidden="true" />
+              <img
                 class="lang-switcher__flag lang-switcher__flag--en"
-                viewBox="0 0 60 30"
-                aria-hidden="true"
-                focusable="false">
-                <clipPath id="lang-uk-clip">
-                  <path d="M0,0 v30 h60 v-30 z" />
-                </clipPath>
-                <clipPath id="lang-uk-clip-2">
-                  <path
-                    d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-                </clipPath>
-                <g clip-path="url(#lang-uk-clip)">
-                  <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                  <path
-                    d="M0,0 L60,30 M60,0 L0,30"
-                    stroke="#FFFFFF"
-                    stroke-width="6" />
-                  <path
-                    d="M0,0 L60,30 M60,0 L0,30"
-                    clip-path="url(#lang-uk-clip-2)"
-                    stroke="#C8102E"
-                    stroke-width="4" />
-                  <path
-                    d="M30,0 v30 M0,15 h60"
-                    stroke="#FFFFFF"
-                    stroke-width="10" />
-                  <path
-                    d="M30,0 v30 M0,15 h60"
-                    stroke="#C8102E"
-                    stroke-width="6" />
-                </g>
-              </svg>
+                src="svg/flag-en.svg"
+                alt=""
+                aria-hidden="true" />
             </button>
-
           </div>
 
           <!-- = Mobile toggle (expandable functionality) = -->
