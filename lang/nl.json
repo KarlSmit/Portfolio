@@ -99,6 +99,8 @@
     "portfolioLabel": "HTML · SCSS · JS",
     "portfolioTitle": "Dit portfolio",
     "portfolioDesc": "Gebouwd met HTML, SCSS (ITCSS + BEM) en Vanilla JS. Eerste persoonlijke project om mijn skills te laten zien.",
+    "portfolioAriaLink": "Dit portfolio bekijken op GitHub (opent in nieuw tabblad)",
+    "portfolioCta": "Bekijk op GitHub →",
     "comingSoon": "Coming soon",
     "currentLabel": "Nu bezig met",
     "currentText": "Dit portfolio bouwen — HTML, SCSS (ITCSS + BEM) en Vanilla JS."

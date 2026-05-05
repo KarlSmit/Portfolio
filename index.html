@@ -335,13 +335,21 @@
 
           <div class="projects__grid">
             <!-- Portfolio -->
-            <article class="projects__card">
+            <a
+              href="https://github.com/KarlSmit/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projects__card projects__card--linked"
+              aria-label="{projects.portfolioAriaLink}">
               <span class="projects__card-label"
                 >{projects.portfolioLabel}</span
               >
               <h3 class="projects__card-title">{projects.portfolioTitle}</h3>
               <p class="projects__card-desc">{projects.portfolioDesc}</p>
-            </article>
+              <span class="projects__card-cta" aria-hidden="true"
+                >{projects.portfolioCta}</span
+              >
+            </a>
 
             <!-- = Coming soon placeholders = -->
             <article

@@ -99,6 +99,8 @@
     "portfolioLabel": "HTML · SCSS · JS",
     "portfolioTitle": "This portfolio",
     "portfolioDesc": "Built with HTML, SCSS (ITCSS + BEM) and vanilla JS. First personal project to showcase my skills.",
+    "portfolioAriaLink": "View this portfolio on GitHub (opens in new tab)",
+    "portfolioCta": "View on GitHub →",
     "comingSoon": "Coming soon",
     "currentLabel": "Currently working on",
     "currentText": "Building this portfolio — HTML, SCSS (ITCSS + BEM) and vanilla JS."

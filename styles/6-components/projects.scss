@@ -55,6 +55,18 @@
       border-color: var(--accent-stroke);
     }
 
+    &--linked {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+
+      &:hover .projects__card-cta {
+        gap: 0.6em;
+      }
+    }
+
     &--placeholder {
       @include flex(column, center, center);
       min-height: 160px;
@@ -87,6 +99,19 @@
     font-size: 0.9rem;
     color: var(--neutral-foreground);
     line-height: 1.6;
+  }
+
+  &__card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-top: auto;
+    padding-top: $space-3;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent-foreground);
+    transition: gap $transition-base;
   }
 
   &__coming-soon {
